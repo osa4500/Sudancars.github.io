@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="ar"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>تذييل الموقع مع إخلاء المسؤولية - SudanCars</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#f47b25",
+                        "background-light": "#f8f7f5",
+                        "background-dark": "#221710",
+                        "navy-custom": "#1a2b3c",
+                    },
+                    fontFamily: {
+                        "display": ["Inter", "sans-serif"]
+                    },
+                    borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" },
+                },
+            },
+        }
+    </script>
+<style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 font-display">
+<div class="relative flex h-auto min-h-screen w-full flex-col overflow-x-hidden">
+<header class="sticky top-0 z-50 w-full bg-white/90 dark:bg-background-dark/90 backdrop-blur-md border-b border-slate-200 dark:border-slate-800">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="flex items-center justify-between h-20">
+<div class="flex items-center gap-3">
+<div class="text-primary">
+<span class="material-symbols-outlined text-4xl">directions_car</span>
+</div>
+<h1 class="text-2xl font-black tracking-tight text-navy-custom dark:text-white">SudanCars</h1>
+</div>
+<nav class="hidden md:flex items-center gap-8">
+<a class="text-slate-700 dark:text-slate-300 hover:text-primary font-bold transition-colors" href="#">الرئيسية</a>
+<a class="text-slate-700 dark:text-slate-300 hover:text-primary font-medium transition-colors" href="#">سيارات للبيع</a>
+<a class="text-slate-700 dark:text-slate-300 hover:text-primary font-medium transition-colors" href="#">سيارات للإيجار</a>
+<a class="text-slate-700 dark:text-slate-300 hover:text-primary font-medium transition-colors" href="#">وكلاء البيع</a>
+</nav>
+<div class="flex items-center gap-4">
+<button class="hidden sm:flex bg-primary hover:bg-primary/90 text-white font-bold py-2.5 px-6 rounded-lg transition-all shadow-lg shadow-primary/20 items-center gap-2">
+<span class="material-symbols-outlined text-xl">add_circle</span>
+<span>أضف إعلانك</span>
+</button>
+<div class="flex items-center gap-2 bg-slate-100 dark:bg-slate-800 p-1 rounded-full border border-slate-200 dark:border-slate-700">
+<span class="material-symbols-outlined p-2 text-slate-600 dark:text-slate-400">notifications</span>
+<div class="h-10 w-10 rounded-full overflow-hidden border-2 border-primary">
+<img alt="Profile" class="h-full w-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDVBP_O9OwP9nmV5-8iZx6K7ViRqbgRCekbEYdvCibVyc4dbL1wjeU8uKFSJtFbVUVOI2td5S8eEp5tfLjDQkM9LqlnxB9tDYupI4DHOu79PlbDymdQYlAztKm7q2RyWCn_3jFDmZ-V_U-GkzozSIheY3jaElaw_-GT1DQAd51LYz4Hyy-M-mhee6yrdLy1vYDQpaiOk9_Ce9RhBrjSEgYBOXqqLu6SeNk1ucyJ3d8NvfMMNioTZITVnG2SSKss4JtIYIT8ipc5D_I"/>
+</div>
+</div>
+</div>
+</div>
+</div>
+</header>
+<main>
+<section class="relative h-[600px] flex items-center justify-center overflow-hidden">
+<div class="absolute inset-0 bg-navy-custom/60 z-10"></div>
+<img alt="Hero Background" class="absolute inset-0 w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBJ7mUfNbVeFDUdNNF4wQAYrPw82LH8-163m4dVxVwIheB8DLMhNFS646xmgeIuXHGVi7Af0FLB1qhoGc1OQmGz-BxHgl5Q5IKf8j-lvwsF9QVF9yxY7IaRi-hNG5xjk7e5Wj4Ep9bTFrGNjxPNdKc5JkVI5Q7V-_VwcFmN_j4UWZuf3x-Cbxa-G2uIWIqAiOi_vNTPwxpX2OStFuox-ETtWmOE2gR4MKkSbYYKGLQWjIV0PEYhNiljp0TWVOh8UBae2IwGlIqRFKk"/>
+<div class="relative z-20 text-center px-4 w-full max-w-5xl">
+<h2 class="text-white text-4xl md:text-6xl font-black mb-6 leading-tight drop-shadow-md">
+                        سوق السيارات الأول في السودان
+                    </h2>
+<p class="text-slate-200 text-lg md:text-xl mb-10 max-w-2xl mx-auto">
+                        تصفح آلاف السيارات المستعملة والجديدة المتاحة للبيع الفوري في جميع ولايات السودان
+                    </p>
+<div class="bg-white/95 dark:bg-background-dark/95 p-4 md:p-6 rounded-2xl shadow-2xl backdrop-blur-sm grid grid-cols-1 md:grid-cols-5 gap-4 items-end">
+<div class="space-y-2 text-right">
+<label class="text-sm font-bold text-slate-500 mr-1">الماركة</label>
+<select class="w-full bg-slate-50 dark:bg-slate-800 border-slate-200 dark:border-slate-700 rounded-lg text-slate-800 dark:text-slate-100 focus:ring-primary focus:border-primary">
+<option>تويوتا</option>
+<option>هيونداي</option>
+<option>مرسيدس</option>
+<option>كيا</option>
+</select>
+</div>
+<div class="space-y-2 text-right">
+<label class="text-sm font-bold text-slate-500 mr-1">الموديل</label>
+<select class="w-full bg-slate-50 dark:bg-slate-800 border-slate-200 dark:border-slate-700 rounded-lg text-slate-800 dark:text-slate-100 focus:ring-primary focus:border-primary">
+<option>كامري</option>
+<option>لاندكروزر</option>
+<option>توسان</option>
+</select>
+</div>
+<div class="space-y-2 text-right">
+<label class="text-sm font-bold text-slate-500 mr-1">الولاية</label>
+<select class="w-full bg-slate-50 dark:bg-slate-800 border-slate-200 dark:border-slate-700 rounded-lg text-slate-800 dark:text-slate-100 focus:ring-primary focus:border-primary">
+<option>الخرطوم</option>
+<option>الجزيرة</option>
+<option>البحر الأحمر</option>
+</select>
+</div>
+<div class="space-y-2 text-right">
+<label class="text-sm font-bold text-slate-500 mr-1">نطاق السعر</label>
+<select class="w-full bg-slate-50 dark:bg-slate-800 border-slate-200 dark:border-slate-700 rounded-lg text-slate-800 dark:text-slate-100 focus:ring-primary focus:border-primary">
+<option>الكل</option>
+<option>أقل من 5 مليون</option>
+<option>5 - 15 مليون</option>
+<option>أكثر من 15 مليون</option>
+</select>
+</div>
+<button class="bg-primary hover:bg-primary/90 text-white font-bold h-[42px] rounded-lg transition-all flex items-center justify-center gap-2">
+<span class="material-symbols-outlined">search</span>
+                            بحث
+                        </button>
+</div>
+</div>
+</section>
+<section class="py-16 max-w-7xl mx-auto px-4">
+<div class="flex items-center justify-between mb-10">
+<h3 class="text-2xl font-black text-navy-custom dark:text-white border-r-4 border-primary pr-4">تصفح حسب الولاية</h3>
+<a class="text-primary font-bold flex items-center gap-1 hover:underline" href="#">عرض الكل <span class="material-symbols-outlined">chevron_left</span></a>
+</div>
+<div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-6">
+<div class="flex flex-col items-center group cursor-pointer">
+<div class="w-24 h-24 rounded-full overflow-hidden border-4 border-white dark:border-slate-800 shadow-md transition-transform group-hover:scale-105 group-hover:border-primary">
+<img alt="Khartoum" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA92ajBA2EFmwCk2a6AUYjrhEvu-z1JN28DZtT7er9tIfRN46nXu4Ef-Ceg0VgczF2eRR8jOnims7qZfcdHH5PLVzXZuh7Z35_8LGi4LCnm-98ycBMWTacFgGFV62BCQltde7YGkJsBvS7jP0c-GFnjgzrHI8jpdriEQ2tf_P_y1RTURxcHwS3dSq0VvFW7DtzadlKIinssAnpm-AqtK8xnglZKirf1UqMDBQE5pJ0sLJM3yZjpfN_pDQrQnDQNwB0tzfrNiatIaRU"/>
+</div>
+<span class="mt-4 font-bold text-slate-800 dark:text-slate-200">الخرطوم</span>
+</div>
+<div class="flex flex-col items-center group cursor-pointer">
+<div class="w-24 h-24 rounded-full overflow-hidden border-4 border-white dark:border-slate-800 shadow-md transition-transform group-hover:scale-105 group-hover:border-primary">
+<img alt="Gezira" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCdvkjjdAS8OcxoJMMn-UAqugwD9KChHeeav7Ty8CxEgxxm8UYfwyhMRnzHT_HA-bsQo3b8ieXkekAPs858wwlzLa0UqkLKkL7jymM8OSXXYLmmy5XuVYupusJMuq3kLlCIdKNwrgBfd85298a46UDcteCvRVJahg6SB9zAkWdjL9ireXfDhAc1aTuQaImI1QJXFeK1loTXuo6x1IxbfdGf5CoDAo530hFFid-3eA-FfOV0xJzLQNceXDq4NK_8eCsrEArgXkRRQn4"/>
+</div>
+<span class="mt-4 font-bold text-slate-800 dark:text-slate-200">الجزيرة</span>
+</div>
+<div class="flex flex-col items-center group cursor-pointer">
+<div class="w-24 h-24 rounded-full overflow-hidden border-4 border-white dark:border-slate-800 shadow-md transition-transform group-hover:scale-105 group-hover:border-primary">
+<img alt="Red Sea" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAU1UnnaYxA79ZpvjalAJcx9wonwZG1gdcncn4nvgdmYJW35fUGacg80YH0FGUAwOce_UNhoKij4LkzcAdXwUgwA9zbpQ3vr7g42_QIV7nF_T6ZUl2--GHWCbMtD1qmFI30u7NWkK5uOPpl-r81obKgftV1L413ILI7Fhyu-bD7ZT0UnxDeQA9XRQrT_k-8rDIyYh3Vj1tUtX2HcoNVa2LrUnZYRItlHBug_I8B6BXFWkS-EkDUvZbpkEsNrGkY-XNbXKQf3qZxS1A"/>
+</div>
+<span class="mt-4 font-bold text-slate-800 dark:text-slate-200">البحر الأحمر</span>
+</div>
+<div class="flex flex-col items-center group cursor-pointer">
+<div class="w-24 h-24 rounded-full overflow-hidden border-4 border-white dark:border-slate-800 shadow-md transition-transform group-hover:scale-105 group-hover:border-primary">
+<img alt="River Nile" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAvzBIkExeu6ZgbhOV95rRLrFZ0GvMF-A4923CyQ1s98gNW-b5Tp6ua2vEezrkeJSV81WAh0Fbv6kelY96KbSIO_8xD_4kbiXfegNVDVA4PiPWKqBp_w2tw-uYG4N_c4--pRigK_jDGH1svFInm75tKYsa5pKlkxQ_Jz7sjWVbPew-Il-drWtJn-py_3uRzAmZF_Uuy0TVviFyf9hgIxZaGh8Kgvyf4ceIhNwW_j0T9teCtg0Yo1Faut7u3CZkA8x1B8RFd7aiJ89Q"/>
+</div>
+<span class="mt-4 font-bold text-slate-800 dark:text-slate-200">نهر النيل</span>
+</div>
+<div class="flex flex-col items-center group cursor-pointer">
+<div class="w-24 h-24 rounded-full overflow-hidden border-4 border-white dark:border-slate-800 shadow-md transition-transform group-hover:scale-105 group-hover:border-primary">
+<img alt="Gedarif" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAGD4TNIfDit5oYdxeU3WXuMQ5GrGFBfVLgDh3hZZQfLiYOGRcZUJEeecfkxg0tTX90Iq0L28Fs_VMgPPpXnFs8DLcIxRcgZFi3w8qepkQv76ecHXynpl-_hru2HqVevCBIVF8ZHURKzEkcyOq_kxMi_2RaXr3ZtUASg4xVOLeOb7lbe1KCFkjcUXfiOwxzxUXCqUa8M9WiSB0gzE3IRrOH6nVJbsnPhqfgX1Cw6DkbB-XHQFE7SXHCfErAQbwXLI7I9SoSPqoajxM"/>
+</div>
+<span class="mt-4 font-bold text-slate-800 dark:text-slate-200">القضارف</span>
+</div>
+<div class="flex flex-col items-center group cursor-pointer">
+<div class="w-24 h-24 rounded-full overflow-hidden border-4 border-white dark:border-slate-800 shadow-md transition-transform group-hover:scale-105 group-hover:border-primary">
+<img alt="South Kordofan" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDsBwZOc6rcHA-WnRJbSIpPUvXDho0el5SDjkzUC1tH0YLnRAiv9KToGtCMnsjP5VFN2zfff6YWi-uO3GYqY8ncsknol10MBU1PypmB92-5TGbox65Q5z1J9HGr9061-X-ek1KytM7BH5imiPtup2eiFXICME4bDIZkS0HQYsFmKds3xuoggZ0YTCVXBgArsOfv7ho-z0b0eZW_DwD235H3k45IJpQy_XZ94nh3h2LHpDxl6t7TmIQVWlG1g2HSs1FqWgSwdV2ynpo"/>
+</div>
+<span class="mt-4 font-bold text-slate-800 dark:text-slate-200">شمال كردفان</span>
+</div>
+</div>
+</section>
+<section class="py-16 bg-white dark:bg-slate-900/50">
+<div class="max-w-7xl mx-auto px-4">
+<div class="flex items-center justify-between mb-10">
+<h3 class="text-2xl font-black text-navy-custom dark:text-white border-r-4 border-primary pr-4">آخر السيارات المضافة</h3>
+<button class="bg-slate-100 dark:bg-slate-800 text-slate-800 dark:text-slate-200 px-4 py-2 rounded-lg font-bold flex items-center gap-2 border border-slate-200 dark:border-slate-700">
+<span class="material-symbols-outlined">filter_list</span>
+                            تصفية النتائج
+                        </button>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+<div class="bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-lg border border-slate-100 dark:border-slate-700 hover:shadow-2xl transition-all group">
+<div class="relative h-56">
+<span class="absolute top-3 right-3 bg-primary text-white text-xs font-bold px-3 py-1 rounded-full z-20">جديد</span>
+<div class="absolute bottom-3 left-3 bg-navy-custom/80 backdrop-blur-sm text-white px-3 py-1 rounded-lg font-black text-lg z-20">
+                                    12,500,000 ج.س
+                                </div>
+<img alt="Toyota Land Cruiser" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCBpn9rkrh5vUEW93s_ymAqm2MvLmGNgDfi92VHtQZji4cWqnIhWbuqil4WpOHEFhR2BzmthqEP_CUkLjrKt3nYyQ_6GBrm8HuCpRjIa8jRhcJgbr2NxsEZ1_-CbTuqAGcyX6WmXSsJmP-H7W_chcQQuMom3YkjoZ6Zw2zsSBSmiYZ15QA-wqF6Im146FLwlFHInK4_K3GO7S0KeBsTsWAao_9W47JAR7cKlTZuFbbhagsH_Hfzpd3Yp8HjjoAoU0AEQmWzwdQUPT8"/>
+</div>
+<div class="p-5">
+<h4 class="text-xl font-bold text-navy-custom dark:text-white mb-2">تويوتا لاندكروزر V8</h4>
+<div class="flex flex-wrap gap-3 mb-4 text-sm text-slate-500 dark:text-slate-400">
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-sm">location_on</span>
+                                        الخرطوم، المنشية
+                                    </div>
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-sm">calendar_month</span>
+                                        2022
+                                    </div>
+</div>
+<button class="w-full py-2 bg-slate-50 dark:bg-slate-700/50 hover:bg-primary hover:text-white text-primary font-bold rounded-lg border border-primary/20 transition-all">
+                                    تفاصيل الإعلان
+                                </button>
+</div>
+</div>
+<div class="bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-lg border border-slate-100 dark:border-slate-700 hover:shadow-2xl transition-all group">
+<div class="relative h-56">
+<div class="absolute bottom-3 left-3 bg-navy-custom/80 backdrop-blur-sm text-white px-3 py-1 rounded-lg font-black text-lg z-20">
+                                    4,200,000 ج.س
+                                </div>
+<img alt="Hyundai Tucson" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBO2sgIUcMQrgOooDm5-Jj6hyfZp7OrKGqlycpN0uT_AfGgrShz584mNFkrc6Z8BpfQWEOiK8i4UlT1LtB4BGYSVZ7TywiC9jyddmwcU1DeZ6h9bR2YTug9KJ4cFH0QgYJL4_E1xRarvVFLxQjXggGPY8TNKWSdoJMWqLQXff7uolX_onJ5BbkfK7OM6pRTPpDR8Sj7uFzec3spySTDNiJFccyujXs7SNQ-_3hbvx0Ao8aaXdn61UGKZ7pdMG1cFuM5PiE4KKEQyWg"/>
+</div>
+<div class="p-5">
+<h4 class="text-xl font-bold text-navy-custom dark:text-white mb-2">هيونداي توسان</h4>
+<div class="flex flex-wrap gap-3 mb-4 text-sm text-slate-500 dark:text-slate-400">
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-sm">location_on</span>
+                                        الجزيرة، مدني
+                                    </div>
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-sm">calendar_month</span>
+                                        2018
+                                    </div>
+</div>
+<button class="w-full py-2 bg-slate-50 dark:bg-slate-700/50 hover:bg-primary hover:text-white text-primary font-bold rounded-lg border border-primary/20 transition-all">
+                                    تفاصيل الإعلان
+                                </button>
+</div>
+</div>
+<div class="bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-lg border border-slate-100 dark:border-slate-700 hover:shadow-2xl transition-all group">
+<div class="relative h-56">
+<span class="absolute top-3 right-3 bg-primary text-white text-xs font-bold px-3 py-1 rounded-full z-20">جديد</span>
+<div class="absolute bottom-3 left-3 bg-navy-custom/80 backdrop-blur-sm text-white px-3 py-1 rounded-lg font-black text-lg z-20">
+                                    18,000,000 ج.س
+                                </div>
+<img alt="Mercedes" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBqtvhh4OR4hrrbqTEG9v1L9kUn5nIamMpel80bqrbN8Upubwlkehie1gPbSetz1_Nuv3GFYtEW9PmcwG6jdV4xUfWncEJ2RlRNb_OXqKKzsmU8gJTuhi0EFNDl0jid8dTBKa8J5wBuaWf-AGylM0xdhTLpyYpe9x68NZTYnA1WdUMOF0qqiC21KA6aFyJLwzEtpwyAZjf7vJlbXE04RFyMq6yu_NujIZhV6MS1toKCcToAHiMPVKmANM0ldDS3_iMccGf9zOLm4kA"/>
+</div>
+<div class="p-5">
+<h4 class="text-xl font-bold text-navy-custom dark:text-white mb-2">مرسيدس E300</h4>
+<div class="flex flex-wrap gap-3 mb-4 text-sm text-slate-500 dark:text-slate-400">
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-sm">location_on</span>
+                                        الخرطوم، بحري
+                                    </div>
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-sm">calendar_month</span>
+                                        2021
+                                    </div>
+</div>
+<button class="w-full py-2 bg-slate-50 dark:bg-slate-700/50 hover:bg-primary hover:text-white text-primary font-bold rounded-lg border border-primary/20 transition-all">
+                                    تفاصيل الإعلان
+                                </button>
+</div>
+</div>
+<div class="bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-lg border border-slate-100 dark:border-slate-700 hover:shadow-2xl transition-all group">
+<div class="relative h-56">
+<div class="absolute bottom-3 left-3 bg-navy-custom/80 backdrop-blur-sm text-white px-3 py-1 rounded-lg font-black text-lg z-20">
+                                    6,800,000 ج.س
+                                </div>
+<img alt="Kia Sportage" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBHvtb5VlJftSEgePRBOraJaLirpibqTeDRVW_pz28KNItqDCtM4UVHgN0TeoRalDTnykjpFDElR2EiUqRLV59G7dMFL7xe7FF7pRvcMT0pkwp-7RwAdNFQNc3_BYez_4zzZ2Ln5Z1Lb98cdf93wWyojwDD7-3NvEWULPdnh-37ff6MsP1SMrn3QM_OX-yyAxmBB4jEYT_LP3TalumtO0r1JZ9nVrTHp3_sdxHgm1AbkGjahJn0NaR_H4J_1arwRqlV5zruh3ZyoxI"/>
+</div>
+<div class="p-5">
+<h4 class="text-xl font-bold text-navy-custom dark:text-white mb-2">كيا سبورتاج</h4>
+<div class="flex flex-wrap gap-3 mb-4 text-sm text-slate-500 dark:text-slate-400">
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-sm">location_on</span>
+                                        بورتسودان
+                                    </div>
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-sm">calendar_month</span>
+                                        2020
+                                    </div>
+</div>
+<button class="w-full py-2 bg-slate-50 dark:bg-slate-700/50 hover:bg-primary hover:text-white text-primary font-bold rounded-lg border border-primary/20 transition-all">
+                                    تفاصيل الإعلان
+                                </button>
+</div>
+</div>
+</div>
+<div class="mt-12 text-center">
+<button class="bg-navy-custom dark:bg-primary text-white font-bold py-3 px-10 rounded-xl hover:opacity-90 transition-all">عرض جميع السيارات</button>
+</div>
+</div>
+</section>
+</main>
+<footer class="bg-navy-custom text-slate-300 pt-16 pb-8">
+<div class="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-4 gap-12">
+<div class="space-y-6">
+<div class="flex items-center gap-3 text-white">
+<span class="material-symbols-outlined text-4xl text-primary">directions_car</span>
+<h2 class="text-2xl font-black">SudanCars</h2>
+</div>
+<p class="text-sm leading-relaxed">
+                        منصتكم الموثوقة لبيع وشراء السيارات في جميع أنحاء السودان. نجمع البائع والمشتري في مكان واحد وبطريقة آمنة وسهلة.
+                    </p>
+<div class="flex gap-4">
+<a class="w-10 h-10 rounded-full bg-slate-700 flex items-center justify-center hover:bg-primary transition-colors" href="#">
+<span class="material-symbols-outlined">public</span>
+</a>
+<a class="w-10 h-10 rounded-full bg-slate-700 flex items-center justify-center hover:bg-primary transition-colors" href="#">
+<span class="material-symbols-outlined">alternate_email</span>
+</a>
+</div>
+</div>
+<div>
+<h4 class="text-white font-bold text-lg mb-6">روابط سريعة</h4>
+<ul class="space-y-4">
+<li><a class="hover:text-primary transition-colors" href="#">سيارات للبيع</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">سيارات للإيجار</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">أضف إعلانك</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">مركز المساعدة</a></li>
+</ul>
+</div>
+<div>
+<h4 class="text-white font-bold text-lg mb-6">أهم الولايات</h4>
+<ul class="space-y-4">
+<li><a class="hover:text-primary transition-colors" href="#">سيارات في الخرطوم</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">سيارات في بورتسودان</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">سيارات في مدني</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">سيارات في عطبرة</a></li>
+</ul>
+</div>
+<div>
+<h4 class="text-white font-bold text-lg mb-6">معلومات التواصل</h4>
+<ul class="space-y-4">
+<li class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary">mail</span>
+                            info@sudancars.com
+                        </li>
+<li class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary">call</span>
+                            +249 123 456 789
+                        </li>
+<li class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary">location_on</span>
+                            الخرطوم، السودان
+                        </li>
+</ul>
+</div>
+</div>
+<div class="max-w-7xl mx-auto px-4 mt-16">
+<div class="bg-slate-800/50 border-r-4 border-primary p-6 rounded-lg">
+<h5 class="text-primary font-bold text-lg mb-3 flex items-center gap-2">
+<span class="material-symbols-outlined">gavel</span>
+                        إخلاء مسؤولية قانوني
+                    </h5>
+<p class="text-sm md:text-base leading-relaxed text-slate-200">
+                        منصة SudanCars هي جسر عبور لتسهيل عملية التسوق ومحاربة جشع السماسرة فقط. نحن غير مسؤولين عن صحة المستندات أو إتمام عملية البيع قانونياً؛ يجب على الطرفين التوجه للجهات القضائية المختصة لتوثيق العقود رسمياً.
+                    </p>
+</div>
+</div>
+<div class="max-w-7xl mx-auto px-4 mt-12 pt-8 border-t border-slate-700 text-center text-xs text-slate-500">
+<p>© 2024 SudanCars. جميع الحقوق محفوظة.</p>
+</div>
+</footer>
+</div>
+
+</body></html>

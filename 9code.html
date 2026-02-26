@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+
+<html dir="rtl" lang="ar"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>طريقة التحويل عبر بنكك - SudanCars</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#136dec",
+                        "background-light": "#f6f7f8",
+                        "background-dark": "#101822",
+                    },
+                    fontFamily: {
+                        "display": ["Inter", "sans-serif"]
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 font-display">
+<div class="relative flex h-auto min-h-screen w-full flex-col group/design-root overflow-x-hidden">
+<div class="layout-container flex h-full grow flex-col">
+<!-- Top Navigation Bar -->
+<header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-slate-200 dark:border-slate-800 px-10 py-3 bg-white dark:bg-slate-900">
+<div class="flex items-center gap-8">
+<div class="flex items-center gap-4 text-primary">
+<div class="size-8">
+<svg fill="none" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_6_330)">
+<path clip-rule="evenodd" d="M24 0.757355L47.2426 24L24 47.2426L0.757355 24L24 0.757355ZM21 35.7574V12.2426L9.24264 24L21 35.7574Z" fill="currentColor" fill-rule="evenodd"></path>
+</g>
+<defs>
+<clippath id="clip0_6_330"><rect fill="white" height="48" width="48"></rect></clippath>
+</defs>
+</svg>
+</div>
+<h2 class="text-slate-900 dark:text-white text-xl font-bold leading-tight tracking-[-0.015em]">SudanCars</h2>
+</div>
+<label class="flex flex-col min-w-40 !h-10 max-w-64 hidden lg:block">
+<div class="flex w-full flex-1 items-stretch rounded-lg h-full">
+<div class="text-slate-500 flex border-none bg-slate-100 dark:bg-slate-800 items-center justify-center pr-4 rounded-r-lg">
+<span class="material-symbols-outlined">search</span>
+</div>
+<input class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-slate-900 dark:text-white focus:outline-0 focus:ring-0 border-none bg-slate-100 dark:bg-slate-800 focus:border-none h-full placeholder:text-slate-500 pr-2 text-base font-normal leading-normal rounded-r-none" placeholder="ابحث عن سيارة..." value=""/>
+</div>
+</label>
+</div>
+<div class="flex flex-1 justify-end gap-8 items-center">
+<nav class="hidden md:flex items-center gap-9">
+<a class="text-slate-900 dark:text-white text-sm font-medium leading-normal hover:text-primary transition-colors" href="#">الرئيسية</a>
+<a class="text-slate-900 dark:text-white text-sm font-medium leading-normal hover:text-primary transition-colors" href="#">سوق السيارات</a>
+<a class="text-slate-900 dark:text-white text-sm font-medium leading-normal hover:text-primary transition-colors" href="#">خدماتنا</a>
+<a class="text-slate-900 dark:text-white text-sm font-medium leading-normal hover:text-primary transition-colors" href="#">اتصل بنا</a>
+</nav>
+<button class="flex min-w-[100px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-primary text-white text-sm font-bold leading-normal tracking-[0.015em] hover:bg-primary/90">
+<span>تسجيل الدخول</span>
+</button>
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10 border border-slate-200 dark:border-slate-700" data-alt="User profile avatar placeholder" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBZvM7lMRqACVY8HBVzLyxlz-oZ1Jee-JUbCJ42ljAhWpzlvqPWECNdQehz2QM-OexjmRM1zGH9vCw82J-cuvLO49E9dAdGmNqT4bty3lpvpPkpO_6iZhD-QzVoN6-gcoHAPFbkJ9LumrtI4I5AQasccH0a2pZtcBvRQc7bPk5bd0VIlWFwh1aYc3blSv3XVI822ELuhhRQ1zYmNk6YxRejytGxqnP03y-AHcSciqKkQWapmyFgnz6miOHkG35S2rK9euMofNkpDh8");'></div>
+</div>
+</header>
+<main class="flex-1 flex justify-center py-10 px-4 md:px-10">
+<div class="max-w-[800px] w-full flex flex-col gap-8">
+<!-- Header Section -->
+<div class="flex flex-col gap-3 text-right">
+<h1 class="text-slate-900 dark:text-white text-4xl font-black leading-tight tracking-[-0.033em]">خطوات الدفع عبر تطبيق بنكك</h1>
+<p class="text-slate-600 dark:text-slate-400 text-lg font-normal leading-normal">دليل توضيحي لإتمام عملية التحويل البنكي بأمان ومصداقية</p>
+</div>
+<!-- Steps Timeline -->
+<div class="bg-white dark:bg-slate-900 rounded-xl shadow-sm border border-slate-200 dark:border-slate-800 overflow-hidden">
+<div class="grid grid-cols-[60px_1fr] gap-x-4 p-8">
+<!-- Step 1 -->
+<div class="flex flex-col items-center gap-1">
+<div class="flex items-center justify-center size-10 rounded-full bg-primary text-white shadow-md">
+<span class="material-symbols-outlined text-2xl">smartphone</span>
+</div>
+<div class="w-[2px] bg-slate-200 dark:bg-slate-700 h-12 grow"></div>
+</div>
+<div class="flex flex-col pb-10 pt-1">
+<p class="text-slate-900 dark:text-white text-lg font-bold leading-normal">1. افتح تطبيق بنكك واختر 'تحويل'</p>
+<p class="text-slate-500 dark:text-slate-400 text-base font-normal leading-normal mt-1">تأكد من تحديث التطبيق لأحدث نسخة لضمان سرعة التنفيذ.</p>
+</div>
+<!-- Step 2 -->
+<div class="flex flex-col items-center gap-1">
+<div class="flex items-center justify-center size-10 rounded-full bg-primary text-white shadow-md">
+<span class="material-symbols-outlined text-2xl">person_add</span>
+</div>
+<div class="w-[2px] bg-slate-200 dark:bg-slate-700 h-12 grow"></div>
+</div>
+<div class="flex flex-col pb-10 pt-1">
+<p class="text-slate-900 dark:text-white text-lg font-bold leading-normal">2. اختر 'تحويل لمستفيد آخر'</p>
+<p class="text-slate-500 dark:text-slate-400 text-base font-normal leading-normal mt-1">اختر الحساب المصدر للتحويل الخاص بك.</p>
+</div>
+<!-- Step 3 -->
+<div class="flex flex-col items-center gap-1">
+<div class="flex items-center justify-center size-10 rounded-full bg-primary text-white shadow-md">
+<span class="material-symbols-outlined text-2xl">account_balance</span>
+</div>
+<div class="w-[2px] bg-slate-200 dark:bg-slate-700 h-12 grow"></div>
+</div>
+<div class="flex flex-col pb-10 pt-1">
+<p class="text-slate-900 dark:text-white text-lg font-bold leading-normal">3. أدخل رقم حساب المنصة</p>
+<div class="mt-3 p-4 bg-slate-50 dark:bg-slate-800 rounded-lg border border-primary/20 flex items-center justify-between gap-4">
+<div class="flex flex-col">
+<span class="text-xs text-slate-500 dark:text-slate-400 font-medium">رقم الحساب الموحد</span>
+<span class="text-xl font-mono font-bold text-primary tracking-wider">1234567890123</span>
+</div>
+<button class="flex items-center gap-2 px-4 py-2 bg-primary text-white rounded-lg text-sm font-bold hover:bg-primary/90 transition-all">
+<span class="material-symbols-outlined text-sm">content_copy</span>
+<span>نسخ الرقم</span>
+</button>
+</div>
+</div>
+<!-- Step 4 -->
+<div class="flex flex-col items-center gap-1">
+<div class="flex items-center justify-center size-10 rounded-full bg-primary text-white shadow-md">
+<span class="material-symbols-outlined text-2xl">payments</span>
+</div>
+<div class="w-[2px] bg-slate-200 dark:bg-slate-700 h-12 grow"></div>
+</div>
+<div class="flex flex-col pb-10 pt-1">
+<p class="text-slate-900 dark:text-white text-lg font-bold leading-normal">4. أدخل المبلغ المطلوب</p>
+<div class="mt-3 p-4 bg-primary/10 dark:bg-primary/20 rounded-lg border border-primary/30 flex items-center justify-between">
+<span class="text-slate-700 dark:text-slate-200 font-medium">قيمة الاشتراك:</span>
+<span class="text-2xl font-black text-primary">2,000 ج.س</span>
+</div>
+</div>
+<!-- Step 5 -->
+<div class="flex flex-col items-center gap-1">
+<div class="flex items-center justify-center size-10 rounded-full bg-primary text-white shadow-md">
+<span class="material-symbols-outlined text-2xl">check_circle</span>
+</div>
+</div>
+<div class="flex flex-col pt-1">
+<p class="text-slate-900 dark:text-white text-lg font-bold leading-normal">5. تأكيد العملية وحفظ الإيصال</p>
+<p class="text-slate-500 dark:text-slate-400 text-base font-normal leading-normal mt-1">يجب تصوير الشاشة (Screenshot) وحفظ الإيصال في الاستديو للتحقق.</p>
+</div>
+</div>
+</div>
+<!-- Important Notice -->
+<div class="bg-amber-50 dark:bg-amber-900/20 border border-amber-200 dark:border-amber-800 rounded-xl p-6 flex gap-4 items-start">
+<span class="material-symbols-outlined text-amber-600 dark:text-amber-400 text-3xl">warning</span>
+<div class="flex flex-col gap-1">
+<p class="text-amber-900 dark:text-amber-200 text-lg font-bold">تنبيه هام جداً!</p>
+<p class="text-amber-800 dark:text-amber-300/80 leading-relaxed">
+                                بعد نجاح عملية التحويل وحفظ الإيصال، يجب العودة إلى هذه الصفحة وإدخال "رقم العملية" المكون من أرقام والموجود في إيصال بنكك لضمان تفعيل اشتراكك آلياً.
+                            </p>
+</div>
+</div>
+<!-- Actions -->
+<div class="flex flex-col sm:flex-row gap-4 justify-center mt-4 pb-12">
+<button class="flex-1 sm:flex-none min-w-[200px] h-14 rounded-xl bg-primary text-white font-bold text-lg flex items-center justify-center gap-2 hover:bg-primary/90 transition-all shadow-lg shadow-primary/20">
+<span class="material-symbols-outlined">arrow_forward</span>
+<span>العودة لصفحة الدفع</span>
+</button>
+<button class="flex-1 sm:flex-none min-w-[200px] h-14 rounded-xl bg-white dark:bg-slate-800 border-2 border-slate-200 dark:border-slate-700 text-slate-700 dark:text-slate-200 font-bold text-lg flex items-center justify-center gap-2 hover:bg-slate-50 dark:hover:bg-slate-700 transition-all">
+<span class="material-symbols-outlined">support_agent</span>
+<span>تواصل مع الدعم الفني</span>
+</button>
+</div>
+</div>
+</main>
+<!-- Footer Small -->
+<footer class="py-6 border-t border-slate-200 dark:border-slate-800 text-center text-slate-500 dark:text-slate-400 text-sm">
+<p>© 2024 SudanCars - جميع الحقوق محفوظة لشركة سودان كارز لخدمات السيارات</p>
+</footer>
+</div>
+</div>
+</body></html>

@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="ar"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>إضافة إعلان مع تحديد العمولة - SudanCars</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&amp;family=Noto+Sans+Arabic:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#f48c25",
+                        "background-light": "#f8f7f5",
+                        "background-dark": "#221910",
+                    },
+                    fontFamily: {
+                        "display": ["Noto Sans Arabic", "Inter", "sans-serif"]
+                    },
+                    borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" },
+                },
+            },
+        }
+    </script>
+<style>
+        body {
+            font-family: 'Noto Sans Arabic', 'Inter', sans-serif;
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 min-h-screen">
+<div class="layout-container flex h-full grow flex-col">
+<header class="flex items-center justify-between border-b border-primary/10 bg-white dark:bg-background-dark px-10 py-3 sticky top-0 z-50">
+<div class="flex items-center gap-8">
+<div class="flex items-center gap-3 text-primary">
+<div class="size-8">
+<svg fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_6_330)">
+<path clip-rule="evenodd" d="M24 0.757355L47.2426 24L24 47.2426L0.757355 24L24 0.757355ZM21 35.7574V12.2426L9.24264 24L21 35.7574Z" fill="currentColor" fill-rule="evenodd"></path>
+</g>
+<defs>
+<clipPath id="clip0_6_330"><rect fill="white" height="48" width="48"></rect></clipPath>
+</defs>
+</svg>
+</div>
+<h2 class="text-slate-900 dark:text-white text-xl font-bold leading-tight tracking-tight">SudanCars</h2>
+</div>
+<label class="flex flex-col min-w-40 h-10 max-w-64">
+<div class="flex w-full flex-1 items-stretch rounded-lg h-full overflow-hidden">
+<div class="text-primary/70 flex bg-primary/10 items-center justify-center px-3">
+<span class="material-symbols-outlined text-xl">search</span>
+</div>
+<input class="form-input flex w-full border-none bg-primary/10 focus:ring-0 h-full placeholder:text-primary/50 text-sm" placeholder="ابحث عن سيارة..." value=""/>
+</div>
+</label>
+</div>
+<div class="flex flex-1 justify-end gap-8">
+<nav class="flex items-center gap-8">
+<a class="text-slate-700 dark:text-slate-300 text-sm font-medium hover:text-primary transition-colors" href="#">الرئيسية</a>
+<a class="text-slate-700 dark:text-slate-300 text-sm font-medium hover:text-primary transition-colors" href="#">سيارات للبيع</a>
+<a class="text-slate-700 dark:text-slate-300 text-sm font-medium hover:text-primary transition-colors" href="#">طلب سيارة</a>
+<a class="text-slate-700 dark:text-slate-300 text-sm font-medium hover:text-primary transition-colors" href="#">اتصل بنا</a>
+</nav>
+<div class="flex items-center gap-4">
+<button class="flex min-w-[100px] cursor-pointer items-center justify-center rounded-lg h-10 px-4 bg-primary text-white text-sm font-bold shadow-sm hover:bg-primary/90 transition-all">
+<span>تسجيل الخروج</span>
+</button>
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10 border-2 border-primary/20" data-alt="User profile picture avatar" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBC0UY3yawOE0AF6hvM5g5XmZET_uoPfvWrOtOfLS20tQCxgN23H-aeXpha6sUprj7iNUKXTm6GgUIOhGO12tO3UXGxAYrg83XB_n6664ziObW_IwcyrdUqs1HF_WTs241ZmHlRwV27P0Uk35TlQwR1cu1V5ZQoGwQvqsIwmg5ZVGDwbooFlqlmpUOD1zIdVGHtFe8v9ZFUgY-NNjPDZirU0T3tW2fxuC1Y20_zqeA05OJx17QdFnhBQB3vKbMeOV4eBZ493GJub8Q");'></div>
+</div>
+</div>
+</header>
+<main class="flex flex-1 justify-center py-10 px-4">
+<div class="max-w-[1000px] w-full flex flex-col gap-8">
+<div class="flex flex-col gap-2">
+<h1 class="text-slate-900 dark:text-white text-3xl font-black leading-tight">إضافة إعلان جديد</h1>
+<p class="text-slate-500 dark:text-slate-400 text-base">أكمل البيانات التالية لنشر إعلانك على أكبر منصة سيارات في السودان</p>
+</div>
+<div class="bg-white dark:bg-background-dark/50 border border-primary/10 rounded-xl p-6 shadow-sm">
+<div class="flex justify-between mb-4">
+<div class="flex flex-col items-center gap-2 flex-1">
+<div class="size-10 rounded-full bg-primary text-white flex items-center justify-center font-bold">1</div>
+<span class="text-xs font-bold text-primary">المعلومات</span>
+</div>
+<div class="h-1 bg-primary/20 flex-1 self-center -mt-6"></div>
+<div class="flex flex-col items-center gap-2 flex-1">
+<div class="size-10 rounded-full bg-slate-200 dark:bg-slate-700 text-slate-500 flex items-center justify-center font-bold">2</div>
+<span class="text-xs font-medium text-slate-400">الصور</span>
+</div>
+<div class="h-1 bg-primary/20 flex-1 self-center -mt-6"></div>
+<div class="flex flex-col items-center gap-2 flex-1">
+<div class="size-10 rounded-full bg-slate-200 dark:bg-slate-700 text-slate-500 flex items-center justify-center font-bold">3</div>
+<span class="text-xs font-medium text-slate-400">الموقع</span>
+</div>
+<div class="h-1 bg-primary/20 flex-1 self-center -mt-6"></div>
+<div class="flex flex-col items-center gap-2 flex-1">
+<div class="size-10 rounded-full bg-slate-200 dark:bg-slate-700 text-slate-500 flex items-center justify-center font-bold">4</div>
+<span class="text-xs font-medium text-slate-400">التأكيد</span>
+</div>
+</div>
+<div class="w-full bg-slate-100 dark:bg-slate-800 rounded-full h-2">
+<div class="bg-primary h-2 rounded-full" style="width: 25%;"></div>
+</div>
+</div>
+<div class="grid grid-cols-1 gap-8">
+<section class="bg-white dark:bg-background-dark/50 border border-primary/10 rounded-xl p-8 shadow-sm">
+<div class="flex items-center gap-3 mb-6">
+<span class="material-symbols-outlined text-primary">directions_car</span>
+<h2 class="text-xl font-bold">معلومات السيارة</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+<label class="flex flex-col gap-2">
+<span class="text-sm font-semibold text-slate-700 dark:text-slate-300">الماركة</span>
+<select class="form-select rounded-lg border-primary/20 bg-background-light dark:bg-slate-800 focus:border-primary focus:ring-primary h-12">
+<option>اختر الماركة</option>
+<option>تويوتا</option>
+<option>هيونداي</option>
+<option>كيا</option>
+<option>مرسيدس</option>
+</select>
+</label>
+<label class="flex flex-col gap-2">
+<span class="text-sm font-semibold text-slate-700 dark:text-slate-300">الموديل</span>
+<select class="form-select rounded-lg border-primary/20 bg-background-light dark:bg-slate-800 focus:border-primary focus:ring-primary h-12">
+<option>اختر الموديل</option>
+<option>كامري</option>
+<option>توسان</option>
+<option>سبورتج</option>
+</select>
+</label>
+<label class="flex flex-col gap-2">
+<span class="text-sm font-semibold text-slate-700 dark:text-slate-300">سنة الصنع</span>
+<input class="form-input rounded-lg border-primary/20 bg-background-light dark:bg-slate-800 focus:border-primary focus:ring-primary h-12" placeholder="مثلاً 2023" type="number"/>
+</label>
+<label class="flex flex-col gap-2">
+<span class="text-sm font-semibold text-slate-700 dark:text-slate-300">نوع الوقود</span>
+<select class="form-select rounded-lg border-primary/20 bg-background-light dark:bg-slate-800 focus:border-primary focus:ring-primary h-12">
+<option>بنزين</option>
+<option>ديزل</option>
+<option>كهرباء</option>
+<option>هجين</option>
+</select>
+</label>
+<label class="flex flex-col gap-2">
+<span class="text-sm font-semibold text-slate-700 dark:text-slate-300">المسافة المقطوعة (كم)</span>
+<input class="form-input rounded-lg border-primary/20 bg-background-light dark:bg-slate-800 focus:border-primary focus:ring-primary h-12" placeholder="0" type="number"/>
+</label>
+<label class="flex flex-col gap-2">
+<span class="text-sm font-semibold text-slate-700 dark:text-slate-300">السعر (بالجنيه السوداني)</span>
+<input class="form-input rounded-lg border-primary/20 bg-background-light dark:bg-slate-800 focus:border-primary focus:ring-primary h-12" placeholder="0.00" type="text"/>
+</label>
+</div>
+</section>
+<section class="bg-white dark:bg-background-dark/50 border border-primary/10 rounded-xl p-8 shadow-sm">
+<div class="flex items-center gap-3 mb-6">
+<span class="material-symbols-outlined text-primary">add_a_photo</span>
+<h2 class="text-xl font-bold">صور السيارة</h2>
+</div>
+<div class="border-2 border-dashed border-primary/30 rounded-xl p-10 flex flex-col items-center justify-center bg-primary/5 hover:bg-primary/10 transition-colors cursor-pointer group mb-6">
+<div class="size-16 rounded-full bg-primary/20 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-3xl text-primary">photo_camera</span>
+</div>
+<p class="text-lg font-bold text-slate-800 dark:text-white mb-1">اسحب الصور هنا أو اضغط للاختيار</p>
+<p class="text-sm text-slate-500">يمكنك رفع حتى 10 صور بجودة عالية (JPG, PNG)</p>
+</div>
+<div class="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-5 gap-4">
+<div class="relative group aspect-square rounded-lg overflow-hidden border border-primary/10">
+<img class="w-full h-full object-cover" data-alt="Modern red sports car front view" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCCHXg_oezNCtwMyxjuhNN1Zo9d-KogUKWkpiMbjczK45lQ5T7aAFOFpNfXSjn55jedGBB6YS47dz6zCafaM-Q30iLQPac_mJqDL_C_l3z6plgr4o0NFKQrA14stzuTPyd5SSrq7pJfqFSca-_QFAR4XP0wc55iuseGs7AhZcDkVEvHqrNuTq6fDsWHqugi0dQLmmxEctd2k9AwK9TA9NyraxOrXO-WDh3nnJZizPN46WjLkmsC4llq4YHs_1Sb9kk92XdHKZ9S4Iw"/>
+<button class="absolute top-2 right-2 size-7 bg-red-500 text-white rounded-full flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+<span class="material-symbols-outlined text-sm">close</span>
+</button>
+<div class="absolute bottom-0 left-0 right-0 bg-primary/80 text-white text-[10px] py-1 text-center font-bold">صورة الغلاف</div>
+</div>
+<div class="relative group aspect-square rounded-lg overflow-hidden border border-primary/10">
+<img class="w-full h-full object-cover" data-alt="Luxury black car interior details" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA5TxMZ4WDm52LBLaWD_j5fAIsr-nhe1223qlekAxulYClDH5cd4vBY4C6sInlAHsiSHA5LEgPM5tieE15EdrgFOwNTZiANccwEf1ja-AA9wlkyerPv9AmIk_qHHbT2Z02RpBgpdjctfBtNttmCD_ryV12HjLDyZqjsWd86vXxYupt0FDJQ0RUoa45M-8IjGrupLAGuiVhqj1xlJmwqx1ba-rAA737LoyGTiS_VNrsPQSrZGpNf6SYVTe1v3YaOOgNytq7JHjjkqYA"/>
+<button class="absolute top-2 right-2 size-7 bg-red-500 text-white rounded-full flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+<span class="material-symbols-outlined text-sm">close</span>
+</button>
+</div>
+<div class="aspect-square rounded-lg border-2 border-dashed border-slate-200 dark:border-slate-700 flex items-center justify-center">
+<span class="material-symbols-outlined text-slate-300 dark:text-slate-600">add</span>
+</div>
+<div class="aspect-square rounded-lg border-2 border-dashed border-slate-200 dark:border-slate-700 flex items-center justify-center">
+<span class="material-symbols-outlined text-slate-300 dark:text-slate-600">add</span>
+</div>
+<div class="aspect-square rounded-lg border-2 border-dashed border-slate-200 dark:border-slate-700 flex items-center justify-center">
+<span class="material-symbols-outlined text-slate-300 dark:text-slate-600">add</span>
+</div>
+</div>
+</section>
+<section class="bg-white dark:bg-background-dark/50 border border-primary/10 rounded-xl p-8 shadow-sm">
+<div class="flex items-center gap-3 mb-6">
+<span class="material-symbols-outlined text-primary">location_on</span>
+<h2 class="text-xl font-bold">موقع السيارة</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<div class="flex flex-col gap-6">
+<label class="flex flex-col gap-2">
+<span class="text-sm font-semibold text-slate-700 dark:text-slate-300">الولاية</span>
+<select class="form-select rounded-lg border-primary/20 bg-background-light dark:bg-slate-800 focus:border-primary focus:ring-primary h-12">
+<option>الخرطوم</option>
+<option>الجزيرة</option>
+<option>البحر الأحمر</option>
+<option>نهر النيل</option>
+</select>
+</label>
+<label class="flex flex-col gap-2">
+<span class="text-sm font-semibold text-slate-700 dark:text-slate-300">المدينة</span>
+<select class="form-select rounded-lg border-primary/20 bg-background-light dark:bg-slate-800 focus:border-primary focus:ring-primary h-12">
+<option>الخرطوم بحري</option>
+<option>أم درمان</option>
+<option>الخرطوم</option>
+</select>
+</label>
+</div>
+<div class="h-48 rounded-xl bg-slate-100 dark:bg-slate-800 border border-primary/10 flex items-center justify-center relative overflow-hidden">
+<img class="w-full h-full object-cover opacity-50" data-alt="Abstract map layout of a city" data-location="Khartoum" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBNUOhMlKrjjGYAz71QHkxuYXxRa2AqDbIYlOn56_eOxUp3FIaPxXAOskCiq4IB4_UMgi-adasknG0okMSFMT0qqVh9-S6Vj1orxsKCbYOi-gzzyZyCEWcnmfNCy9ce1-B1qHYyUSehDNvt1mGX-IJxXnOesZ0YXXAwVeOwSe6pDom7Ru9-QdtpJP4cyByFVMqHCgzL9SnBeyzbk0V-ZJMe6MFUZh1cN5GtEVkV27qnNWm2yBAiyqk3259QiH1DHIQ6ErqZO_EAYmI"/>
+<div class="absolute inset-0 flex flex-col items-center justify-center">
+<span class="material-symbols-outlined text-primary text-4xl mb-2">location_on</span>
+<span class="text-xs font-bold text-slate-600 dark:text-slate-400">سيتم تحديد الموقع بدقة في الخريطة</span>
+</div>
+</div>
+</div>
+</section>
+<section class="bg-amber-50 dark:bg-amber-900/20 border border-amber-200 dark:border-amber-700/50 rounded-xl p-8 shadow-sm">
+<div class="flex items-start gap-4">
+<div class="bg-amber-100 dark:bg-amber-800 p-2 rounded-lg">
+<span class="material-symbols-outlined text-amber-600 dark:text-amber-400">payments</span>
+</div>
+<div class="flex-1">
+<h2 class="text-xl font-bold text-amber-900 dark:text-amber-100 mb-2">رسوم الخدمة</h2>
+<p class="text-amber-800 dark:text-amber-200 text-lg font-medium">
+                                    رسوم نشر الإعلان هي 2,000 جنيه سوداني فقط
+                                </p>
+<div class="mt-6 flex items-center gap-3">
+<input class="w-5 h-5 rounded text-amber-600 focus:ring-amber-500 border-amber-300 dark:bg-slate-800 dark:border-amber-700" id="commission_agree" type="checkbox"/>
+<label class="text-base text-amber-900 dark:text-amber-200 font-bold" for="commission_agree">
+                                        أوافق على دفع عمولة المنصة وقدرها 2,000 جنيه سوداني عند إتمام عملية النشر
+                                    </label>
+</div>
+</div>
+</div>
+</section>
+<div class="flex flex-col md:flex-row gap-4 justify-between items-center bg-white dark:bg-background-dark/50 p-6 rounded-xl border border-primary/10">
+<div class="flex items-center gap-2">
+<input class="rounded text-primary focus:ring-primary border-primary/20" id="terms" type="checkbox"/>
+<label class="text-sm text-slate-600 dark:text-slate-400" for="terms">أوافق على <a class="text-primary underline" href="#">شروط وأحكام</a> منصة SudanCars</label>
+</div>
+<button class="w-full md:w-auto min-w-[280px] h-14 bg-primary text-white text-lg font-bold rounded-lg shadow-lg shadow-primary/20 hover:bg-primary/90 transition-all flex items-center justify-center gap-3 px-8">
+<span class="material-symbols-outlined">payments</span>
+                            دفع الرسوم ونشر الإعلان
+                        </button>
+</div>
+</div>
+</div>
+</main>
+<footer class="mt-auto py-8 border-t border-primary/10 px-10 bg-white dark:bg-background-dark">
+<div class="flex flex-col md:flex-row justify-between items-center gap-6">
+<div class="flex items-center gap-2 text-primary">
+<span class="font-bold">SudanCars</span>
+<span class="text-slate-400">© 2024 جميع الحقوق محفوظة</span>
+</div>
+<div class="flex gap-6">
+<a class="text-slate-400 hover:text-primary transition-colors" href="#">
+<span class="material-symbols-outlined">social_leaderboard</span>
+</a>
+<a class="text-slate-400 hover:text-primary transition-colors" href="#">
+<span class="material-symbols-outlined">share</span>
+</a>
+<a class="text-slate-400 hover:text-primary transition-colors" href="#">
+<span class="material-symbols-outlined">language</span>
+</a>
+</div>
+</div>
+</footer>
+</div>
+
+</body></html>

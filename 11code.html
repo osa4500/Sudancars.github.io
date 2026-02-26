@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+
+<html dir="rtl" lang="ar"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>اختيار وسيلة الدفع - SudanCars</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#f48c25",
+                        "background-light": "#f8f7f5",
+                        "background-dark": "#221910",
+                    },
+                    fontFamily: {
+                        "display": ["Inter", "sans-serif"]
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-slate-100 min-h-screen">
+<div class="layout-container flex h-full grow flex-col">
+<!-- Top Navigation Bar -->
+<header class="flex items-center justify-between border-b border-primary/10 bg-white dark:bg-background-dark px-10 py-3 sticky top-0 z-50">
+<div class="flex items-center gap-8">
+<div class="flex items-center gap-4 text-primary">
+<div class="size-8">
+<svg fill="none" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path clip-rule="evenodd" d="M24 0.757355L47.2426 24L24 47.2426L0.757355 24L24 0.757355ZM21 35.7574V12.2426L9.24264 24L21 35.7574Z" fill="currentColor" fill-rule="evenodd"></path>
+</svg>
+</div>
+<h2 class="text-slate-900 dark:text-white text-xl font-bold leading-tight tracking-tight">SudanCars</h2>
+</div>
+<div class="hidden md:flex items-center gap-6">
+<a class="text-slate-600 dark:text-slate-300 text-sm font-medium hover:text-primary transition-colors" href="#">الرئيسية</a>
+<a class="text-slate-600 dark:text-slate-300 text-sm font-medium hover:text-primary transition-colors" href="#">سوق السيارات</a>
+<a class="text-slate-600 dark:text-slate-300 text-sm font-medium hover:text-primary transition-colors" href="#">خدماتنا</a>
+<a class="text-slate-600 dark:text-slate-300 text-sm font-medium hover:text-primary transition-colors" href="#">اتصل بنا</a>
+</div>
+</div>
+<div class="flex items-center gap-4">
+<label class="hidden lg:flex items-center relative min-w-64">
+<span class="material-symbols-outlined absolute right-3 text-slate-400">search</span>
+<input class="w-full bg-slate-100 dark:bg-slate-800 border-none rounded-lg py-2 pr-10 pl-4 text-sm focus:ring-2 focus:ring-primary/50" placeholder="ابحث عن سيارة..." type="text"/>
+</label>
+<button class="bg-primary text-white px-6 py-2 rounded-lg font-bold text-sm hover:bg-primary/90 transition-all flex items-center gap-2">
+<span class="material-symbols-outlined text-sm">person</span>
+<span>حسابي</span>
+</button>
+</div>
+</header>
+<main class="max-w-[960px] mx-auto w-full px-4 py-8">
+<!-- Breadcrumbs -->
+<nav class="flex items-center gap-2 text-sm text-slate-500 mb-8">
+<a class="hover:text-primary" href="#">الرئيسية</a>
+<span class="material-symbols-outlined text-xs">chevron_left</span>
+<a class="hover:text-primary" href="#">نشر إعلان</a>
+<span class="material-symbols-outlined text-xs">chevron_left</span>
+<span class="text-slate-900 dark:text-white font-bold">اختيار وسيلة الدفع</span>
+</nav>
+<div class="mb-10">
+<h1 class="text-3xl font-black text-slate-900 dark:text-white mb-2">إكمال عملية الدفع</h1>
+<p class="text-slate-600 dark:text-slate-400">يرجى اختيار وسيلة الدفع المناسبة لإتمام نشر إعلانك على SudanCars</p>
+</div>
+<!-- Summary Card -->
+<div class="bg-white dark:bg-slate-900 rounded-xl shadow-sm border border-slate-200 dark:border-slate-800 p-6 mb-8 flex flex-col md:flex-row gap-6 items-center">
+<div class="w-full md:w-48 h-32 rounded-lg bg-cover bg-center overflow-hidden" data-alt="Modern SUV car for sale advertisement" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBd3jOPlSl1gsUdN9nLX_e2WPy2iLiJyS6IePic_HWNNCqjp2xEaRrjF5MbR3ME-nrtO73iAS5NESbqjNdDqO8JtUipHWtmoA3Ah5WVvbKZDbrsVgYbcY3dbSxPQT-7i7ddE6odPD9HhuEJcZ-5jkXZTk8TZ1gW6OtC1QK5mKuaEq9MRtD1FHamPSXkvZhHX4TzgYFReL7Iu6mKlP3K2fp4QZ7mMyupS_SDO5Kp3ssciyzrhhvPQEcVzCHaL1_vwzp45sAp8_rk77U')"></div>
+<div class="flex-1 text-center md:text-right">
+<span class="text-primary text-xs font-bold uppercase tracking-wider mb-1 block">تفاصيل الفاتورة</span>
+<h3 class="text-xl font-bold text-slate-900 dark:text-white mb-2">ملخص الدفع لإعلان مميز</h3>
+<div class="flex items-center justify-center md:justify-start gap-4">
+<div class="bg-primary/10 text-primary px-3 py-1 rounded-full text-sm font-bold">
+                            الرسوم: 2,000 ج.س
+                        </div>
+<span class="text-slate-400 text-sm italic">شامل ضريبة القيمة المضافة</span>
+</div>
+</div>
+</div>
+<!-- Payment Methods Section -->
+<section>
+<h2 class="text-xl font-bold text-slate-900 dark:text-white mb-6">اختر وسيلة الدفع</h2>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+<!-- Bankak Option (Selected State Shown for UI Context) -->
+<div class="relative cursor-pointer border-2 border-primary bg-primary/5 rounded-xl p-6 transition-all hover:shadow-md group">
+<div class="absolute top-4 left-4 text-primary">
+<span class="material-symbols-outlined">check_circle</span>
+</div>
+<div class="flex items-center gap-4 mb-4">
+<div class="size-12 rounded-full bg-white flex items-center justify-center shadow-sm overflow-hidden">
+<img alt="BOK Bankak Logo" class="size-8 object-contain" data-alt="Bank of Khartoum Bankak app logo" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDHnhS_re1p0rIcX9r9cOdijS3nvtv752k_aAmcHdtEIrx3VTMChOMlYZDgLk6oxm_FmaPJhO3sMmkbRJkkVyCVM808kJJl2Fc63jQKoP7PfTdq4vN8gjD1j-brIo-Z6S5fwcdPTEabSJBvqpIcZbXuvUxLq1Y1zLoS80hHuXbT0wSDRnoIKk6PHtIEMOgBZAi-dOixWpl2NPRFiaSNqf8qNQ4s6kRXv4_QEIZO0GNVJ4_kQmliI1Ouv03JLUsg6RD52AudnF6TkLY"/>
+</div>
+<div>
+<h4 class="font-bold text-slate-900 dark:text-white">تطبيق بنكك</h4>
+<p class="text-sm text-slate-500">بنك الخرطوم</p>
+</div>
+</div>
+<p class="text-sm text-slate-600 dark:text-slate-400">تحويل مباشر وسريع عبر تطبيق بنكك.</p>
+</div>
+<!-- Fawry Option -->
+<div class="cursor-pointer border-2 border-slate-200 dark:border-slate-800 rounded-xl p-6 transition-all hover:border-primary/50 hover:bg-slate-50 dark:hover:bg-slate-800/50 group">
+<div class="flex items-center gap-4 mb-4">
+<div class="size-12 rounded-full bg-white flex items-center justify-center shadow-sm overflow-hidden">
+<img alt="Fawry Logo" class="size-8 object-contain" data-alt="Faisal Islamic Bank Fawry app logo" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBz3ZM3b5oC2ezk7dI_NOe2I_GIAhgwadIaefoGOT3cX2t3zQ2OvuMQwkYAvbLRAYuh8nT2wMvKWeuZ3M9Xpl_7wggHAuoXgy_cZMpGDZNzZ5jv8qcYoEh6AX8GotmmGvAcNFIoEyWtoIi5DmyIn3jkDqSjyQ6qCkeTgKbD8tLIlzMWwfaM3_fXjttmkON7alv2oi_oCHSuaZgj6L1uwLde-jyuhxkCz5ecaRO9gVXEiNTSApO_qWL-TqBigRVye_Z50hs9WoR7cKo"/>
+</div>
+<div>
+<h4 class="font-bold text-slate-900 dark:text-white">تطبيق فوري</h4>
+<p class="text-sm text-slate-500">بنك فيصل الإسلامي</p>
+</div>
+</div>
+<p class="text-sm text-slate-600 dark:text-slate-400">ادفع بسهولة عبر تطبيق فوري للموبايل.</p>
+</div>
+</div>
+<!-- Transaction Details (Visible when Bankak is selected) -->
+<div class="bg-white dark:bg-slate-900 rounded-xl border border-slate-200 dark:border-slate-800 p-8 mb-10">
+<div class="flex flex-col md:flex-row gap-8">
+<div class="flex-1">
+<h4 class="font-bold text-slate-900 dark:text-white mb-4 flex items-center gap-2">
+<span class="material-symbols-outlined text-primary">info</span>
+                                تعليمات التحويل
+                            </h4>
+<ul class="space-y-3 text-slate-600 dark:text-slate-400 text-sm">
+<li class="flex items-start gap-2">
+<span class="size-5 rounded-full bg-slate-100 dark:bg-slate-800 flex items-center justify-center text-[10px] font-bold shrink-0 mt-0.5">1</span>
+<span>قم بالتحويل إلى رقم الحساب: <strong class="text-slate-900 dark:text-white">1234567</strong></span>
+</li>
+<li class="flex items-start gap-2">
+<span class="size-5 rounded-full bg-slate-100 dark:bg-slate-800 flex items-center justify-center text-[10px] font-bold shrink-0 mt-0.5">2</span>
+<span>اسم المستفيد: <strong class="text-slate-900 dark:text-white">شركة سودان كارز لخدمات السيارات</strong></span>
+</li>
+<li class="flex items-start gap-2">
+<span class="size-5 rounded-full bg-slate-100 dark:bg-slate-800 flex items-center justify-center text-[10px] font-bold shrink-0 mt-0.5">3</span>
+<span>تأكد من إدخال المبلغ الصحيح (2,000 ج.س)</span>
+</li>
+<li class="flex items-start gap-2">
+<span class="size-5 rounded-full bg-slate-100 dark:bg-slate-800 flex items-center justify-center text-[10px] font-bold shrink-0 mt-0.5">4</span>
+<span>قم بنسخ "رقم العملية" ولصقه في الحقل أدناه للتأكيد</span>
+</li>
+</ul>
+</div>
+<div class="flex-1 flex flex-col justify-center">
+<label class="block text-sm font-bold text-slate-700 dark:text-slate-300 mb-2">رقم العملية (Transaction ID)</label>
+<input class="w-full bg-slate-50 dark:bg-slate-800 border-slate-200 dark:border-slate-700 rounded-lg py-3 px-4 focus:ring-primary focus:border-primary" placeholder="مثلاً: 1234567890" type="text"/>
+<p class="mt-2 text-xs text-slate-500">سيتم مراجعة العملية وتفعيل الإعلان خلال أقل من 15 دقيقة.</p>
+</div>
+</div>
+</div>
+<!-- Submit Button -->
+<div class="flex flex-col items-center gap-4">
+<button class="w-full md:w-auto min-w-[320px] bg-primary text-white py-4 px-10 rounded-xl font-black text-lg shadow-lg shadow-primary/20 hover:scale-[1.02] active:scale-95 transition-all">
+                        تأكيد الدفع وإتمام النشر
+                    </button>
+<button class="text-slate-500 text-sm font-medium hover:text-slate-800 underline">
+                        إلغاء العملية والعودة للخلف
+                    </button>
+</div>
+</section>
+</main>
+<footer class="mt-20 border-t border-slate-200 dark:border-slate-800 py-10 bg-white dark:bg-background-dark">
+<div class="max-w-[960px] mx-auto px-4 flex flex-col md:flex-row justify-between items-center gap-6">
+<div class="flex items-center gap-2 text-primary">
+<span class="material-symbols-outlined">directions_car</span>
+<span class="font-bold text-slate-900 dark:text-white">SudanCars</span>
+</div>
+<p class="text-slate-500 text-sm">© 2024 سودان كارز. جميع الحقوق محفوظة.</p>
+<div class="flex gap-4">
+<a class="size-8 rounded-full bg-slate-100 dark:bg-slate-800 flex items-center justify-center text-slate-600 dark:text-slate-400 hover:bg-primary hover:text-white transition-all" href="#">
+<span class="material-symbols-outlined text-sm">share</span>
+</a>
+<a class="size-8 rounded-full bg-slate-100 dark:bg-slate-800 flex items-center justify-center text-slate-600 dark:text-slate-400 hover:bg-primary hover:text-white transition-all" href="#">
+<span class="material-symbols-outlined text-sm">mail</span>
+</a>
+</div>
+</div>
+</footer>
+</div>
+</body></html>

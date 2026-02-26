@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+
+<html dir="rtl" lang="ar"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>نتائج البحث - SudanCars</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&amp;family=Inter:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#137fec",
+                        "background-light": "#f6f7f8",
+                        "background-dark": "#101922",
+                    },
+                    fontFamily: {
+                        "display": ["Cairo", "Inter", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        body {
+            font-family: 'Cairo', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100">
+<div class="relative flex min-h-screen w-full flex-col overflow-x-hidden">
+<!-- Header / TopNavBar -->
+<header class="sticky top-0 z-50 w-full bg-white dark:bg-background-dark border-b border-slate-200 dark:border-slate-800 px-6 lg:px-20 py-4">
+<div class="max-w-7xl mx-auto flex items-center justify-between gap-8">
+<div class="flex items-center gap-8 flex-1">
+<div class="flex items-center gap-3 text-primary">
+<span class="material-symbols-outlined text-3xl font-bold">directions_car</span>
+<h1 class="text-2xl font-bold tracking-tight">SudanCars</h1>
+</div>
+<div class="hidden md:flex flex-1 max-w-md relative">
+<span class="material-symbols-outlined absolute right-3 top-1/2 -translate-y-1/2 text-slate-400">search</span>
+<input class="w-full pr-10 pl-4 py-2 bg-slate-100 dark:bg-slate-800 border-none rounded-lg focus:ring-2 focus:ring-primary text-sm" placeholder="ابحث عن ماركة، موديل أو مدينة..." type="text"/>
+</div>
+</div>
+<nav class="hidden lg:flex items-center gap-6">
+<a class="text-sm font-semibold hover:text-primary transition-colors" href="#">الرئيسية</a>
+<a class="text-sm font-semibold text-primary transition-colors border-b-2 border-primary pb-1" href="#">سيارات للبيع</a>
+<a class="text-sm font-semibold hover:text-primary transition-colors" href="#">سيارات للإيجار</a>
+<a class="text-sm font-semibold hover:text-primary transition-colors" href="#">طلب سيارة</a>
+<a class="text-sm font-semibold hover:text-primary transition-colors" href="#">مركز المساعدة</a>
+</nav>
+<div class="flex items-center gap-4">
+<button class="bg-primary hover:bg-primary/90 text-white px-5 py-2 rounded-lg text-sm font-bold transition-all flex items-center gap-2">
+<span class="material-symbols-outlined text-sm">add_circle</span>
+                        أضف إعلانك
+                    </button>
+<div class="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center cursor-pointer border border-primary/20">
+<span class="material-symbols-outlined text-primary">person</span>
+</div>
+</div>
+</div>
+</header>
+<main class="max-w-7xl mx-auto w-full px-6 lg:px-20 py-8">
+<!-- Breadcrumbs -->
+<nav class="flex items-center gap-2 text-sm text-slate-500 mb-6">
+<a class="hover:text-primary" href="#">الرئيسية</a>
+<span class="material-symbols-outlined text-xs">chevron_left</span>
+<span class="text-slate-900 dark:text-slate-100 font-medium">نتائج البحث</span>
+</nav>
+<div class="flex flex-col lg:flex-row gap-8">
+<!-- Right Sidebar: Filters -->
+<aside class="w-full lg:w-72 shrink-0 space-y-6">
+<div class="bg-white dark:bg-slate-900 p-5 rounded-xl border border-slate-200 dark:border-slate-800 shadow-sm">
+<div class="flex items-center justify-between mb-4">
+<h2 class="text-lg font-bold">فلاتر البحث</h2>
+<button class="text-primary text-sm font-medium hover:underline">مسح الكل</button>
+</div>
+<!-- Filter Item -->
+<div class="space-y-4">
+<div>
+<label class="text-sm font-bold block mb-2 flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-sm">sell</span> الحالة
+                                </label>
+<div class="grid grid-cols-2 gap-2">
+<button class="py-2 text-xs font-bold rounded-lg border-2 border-primary bg-primary/5 text-primary">مستعمل</button>
+<button class="py-2 text-xs font-bold rounded-lg border-2 border-transparent bg-slate-100 dark:bg-slate-800 text-slate-600">جديد</button>
+</div>
+</div>
+<hr class="border-slate-100 dark:border-slate-800"/>
+<div>
+<label class="text-sm font-bold block mb-2 flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-sm">calendar_today</span> سنة الصنع
+                                </label>
+<select class="w-full bg-slate-50 dark:bg-slate-800 border-slate-200 dark:border-slate-700 rounded-lg text-sm">
+<option>من</option>
+<option>2024</option>
+<option>2023</option>
+</select>
+</div>
+<div>
+<label class="text-sm font-bold block mb-2 flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-sm">local_gas_station</span> نوع الوقود
+                                </label>
+<div class="flex flex-wrap gap-2">
+<span class="px-3 py-1 rounded-full bg-slate-100 dark:bg-slate-800 text-xs cursor-pointer hover:bg-primary/10 hover:text-primary border border-transparent hover:border-primary/20">بنزين</span>
+<span class="px-3 py-1 rounded-full bg-slate-100 dark:bg-slate-800 text-xs cursor-pointer hover:bg-primary/10 hover:text-primary border border-transparent hover:border-primary/20">ديزل</span>
+<span class="px-3 py-1 rounded-full bg-primary/10 text-primary text-xs cursor-pointer border border-primary/20">كهرباء</span>
+</div>
+</div>
+<hr class="border-slate-100 dark:border-slate-800"/>
+<div>
+<label class="text-sm font-bold block mb-2 flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-sm">settings_input_component</span> ناقل الحركة
+                                </label>
+<select class="w-full bg-slate-50 dark:bg-slate-800 border-slate-200 dark:border-slate-700 rounded-lg text-sm">
+<option>أوتوماتيك</option>
+<option>يدوي</option>
+</select>
+</div>
+<div>
+<label class="text-sm font-bold block mb-2 flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-sm">location_on</span> الولاية
+                                </label>
+<select class="w-full bg-slate-50 dark:bg-slate-800 border-slate-200 dark:border-slate-700 rounded-lg text-sm">
+<option>الخرطوم</option>
+<option>بورتسودان</option>
+<option>مدني</option>
+</select>
+</div>
+<hr class="border-slate-100 dark:border-slate-800"/>
+<div>
+<label class="text-sm font-bold block mb-2 flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-sm">payments</span> السعر (SDG)
+                                </label>
+<div class="flex gap-2 items-center">
+<input class="w-1/2 bg-slate-50 dark:bg-slate-800 border-slate-200 dark:border-slate-700 rounded-lg text-sm px-2 py-1" placeholder="من" type="number"/>
+<input class="w-1/2 bg-slate-50 dark:bg-slate-800 border-slate-200 dark:border-slate-700 rounded-lg text-sm px-2 py-1" placeholder="إلى" type="number"/>
+</div>
+</div>
+<button class="w-full bg-primary text-white font-bold py-3 rounded-xl mt-4 hover:bg-primary/90 transition-all shadow-lg shadow-primary/20">تطبيق الفلاتر</button>
+</div>
+</div>
+</aside>
+<!-- Left Content: Search Results -->
+<div class="flex-1">
+<div class="flex flex-col md:flex-row md:items-center justify-between mb-6 gap-4">
+<div>
+<h2 class="text-2xl font-bold">نتائج البحث في السودان</h2>
+<p class="text-slate-500 text-sm">تم العثور على 1,240 سيارة متاحة حالياً</p>
+</div>
+<div class="flex items-center gap-2 bg-white dark:bg-slate-900 p-1 rounded-lg border border-slate-200 dark:border-slate-800">
+<button class="px-4 py-2 text-sm font-bold rounded-md bg-primary text-white">الأحدث</button>
+<button class="px-4 py-2 text-sm font-bold rounded-md text-slate-500 hover:bg-slate-50 dark:hover:bg-slate-800">الأقل سعراً</button>
+<button class="px-4 py-2 text-sm font-bold rounded-md text-slate-500 hover:bg-slate-50 dark:hover:bg-slate-800">الأكثر طلباً</button>
+</div>
+</div>
+<!-- Car Cards Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6">
+<!-- Card 1 -->
+<div class="bg-white dark:bg-slate-900 rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-800 shadow-sm hover:shadow-md transition-shadow group relative">
+<div class="relative h-48 overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="White modern sedan parked in city" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBz2sgSNO1-TR66H47a1ilQcV-0eXDUhS5cR-0QI8rox2x1CZgA3Lrb1VkeW9svYFH3i9v50c3BGUw7p23rxsdBO8CYlo1ZD8nhw7J9-w1GGJ5hgdx0OUwfRtWqx1tA8t6WaLTLkh2UgpbMxunztssYxLdbAp2u95vgye0tXIirE_pOv0bkUDA73FVpASsKxWmAxtoLg4nMAKIF60AARYb40YsdgqVL9Y7PzaCuTpcofBn1l47E_ZAIzlQA7WX8A-KKRoVNOvE6q8A"/>
+<button class="absolute top-3 left-3 w-10 h-10 bg-white/80 backdrop-blur rounded-full flex items-center justify-center text-slate-400 hover:text-red-500 transition-colors">
+<span class="material-symbols-outlined">favorite</span>
+</button>
+<span class="absolute bottom-3 right-3 bg-primary text-white px-3 py-1 rounded-lg text-xs font-bold">مميز</span>
+</div>
+<div class="p-5">
+<div class="flex justify-between items-start mb-2">
+<h3 class="font-bold text-lg leading-tight">تويوتا كورولا 2023</h3>
+<p class="text-primary font-bold">15,000,000 ج.س</p>
+</div>
+<div class="flex items-center gap-1 text-slate-500 text-xs mb-4">
+<span class="material-symbols-outlined text-sm">location_on</span> الخرطوم، الرياض
+                                </div>
+<div class="grid grid-cols-3 gap-2 border-t border-slate-100 dark:border-slate-800 pt-4">
+<div class="flex flex-col items-center gap-1 text-slate-500">
+<span class="material-symbols-outlined text-primary">speed</span>
+<span class="text-[10px] font-bold">12,000 كم</span>
+</div>
+<div class="flex flex-col items-center gap-1 text-slate-500">
+<span class="material-symbols-outlined text-primary">settings</span>
+<span class="text-[10px] font-bold">أوتوماتيك</span>
+</div>
+<div class="flex flex-col items-center gap-1 text-slate-500">
+<span class="material-symbols-outlined text-primary">ev_station</span>
+<span class="text-[10px] font-bold">بنزين</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="bg-white dark:bg-slate-900 rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-800 shadow-sm hover:shadow-md transition-shadow group relative">
+<div class="relative h-48 overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Black luxury SUV off-road track" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBv8ZNYPkHoxSgNmibeoDVvIIW_ldw6dVZRFIH63Ta-vH0wiUTmsI38Eb1o1bF15lnE8wABy4MG--PRGgwNhxZm5ISvlqIkOcuu-4EM7_mHLXpCI-gEVoEKmzU-b-hqv1-Jjvt8IV7DkKiQrYc_opl8QogkCRW3JhzXUJ2RXMdYvUn7daIxYFAq9qIoeos8XEqedQxd4PDz2NWeC-oP058e3Kp7h3cQDmfcc2u4S_AlDoM5D20kSshkL8_QM0mpwG7dbk1vyGH_MaU"/>
+<button class="absolute top-3 left-3 w-10 h-10 bg-white/80 backdrop-blur rounded-full flex items-center justify-center text-slate-400 hover:text-red-500 transition-colors">
+<span class="material-symbols-outlined">favorite</span>
+</button>
+</div>
+<div class="p-5">
+<div class="flex justify-between items-start mb-2">
+<h3 class="font-bold text-lg leading-tight">هيونداي توسان 2021</h3>
+<p class="text-primary font-bold">22,500,000 ج.س</p>
+</div>
+<div class="flex items-center gap-1 text-slate-500 text-xs mb-4">
+<span class="material-symbols-outlined text-sm">location_on</span> بورتسودان
+                                </div>
+<div class="grid grid-cols-3 gap-2 border-t border-slate-100 dark:border-slate-800 pt-4">
+<div class="flex flex-col items-center gap-1 text-slate-500">
+<span class="material-symbols-outlined text-primary">speed</span>
+<span class="text-[10px] font-bold">45,000 كم</span>
+</div>
+<div class="flex flex-col items-center gap-1 text-slate-500">
+<span class="material-symbols-outlined text-primary">settings</span>
+<span class="text-[10px] font-bold">أوتوماتيك</span>
+</div>
+<div class="flex flex-col items-center gap-1 text-slate-500">
+<span class="material-symbols-outlined text-primary">ev_station</span>
+<span class="text-[10px] font-bold">ديزل</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Card 3 -->
+<div class="bg-white dark:bg-slate-900 rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-800 shadow-sm hover:shadow-md transition-shadow group relative">
+<div class="relative h-48 overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Silver luxury sports car front view" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBYRsz9Lt0nQnIv2gvxrNiPeIuJdTOd10REu3VytizatTGLq0G6BW7-r6Plfj2VXhUm0NMVK3ra-jVVimEWZsPo0n4TpNmIGBMsFM7o9LB3avhJpafk3KyPGTkri1o2UQRrOmNNzrh7ypQUWcx2dZj7ZNRM5ZCmle1F1uqxCcBQorIhSyUcQZGTqTrYLM-ow4_6m3D6lhnTDfvz703XCXQpQaTTgX9VCiGuebYibhRf4hqADO1l0GdQ3RiTNbk0CSLQTTvv3gwVXXs"/>
+<button class="absolute top-3 left-3 w-10 h-10 bg-white/80 backdrop-blur rounded-full flex items-center justify-center text-red-500 transition-colors">
+<span class="material-symbols-outlined fill-1">favorite</span>
+</button>
+</div>
+<div class="p-5">
+<div class="flex justify-between items-start mb-2">
+<h3 class="font-bold text-lg leading-tight">مرسيدس C300 2019</h3>
+<p class="text-primary font-bold">35,000,000 ج.س</p>
+</div>
+<div class="flex items-center gap-1 text-slate-500 text-xs mb-4">
+<span class="material-symbols-outlined text-sm">location_on</span> الخرطوم بحري
+                                </div>
+<div class="grid grid-cols-3 gap-2 border-t border-slate-100 dark:border-slate-800 pt-4">
+<div class="flex flex-col items-center gap-1 text-slate-500">
+<span class="material-symbols-outlined text-primary">speed</span>
+<span class="text-[10px] font-bold">88,000 كم</span>
+</div>
+<div class="flex flex-col items-center gap-1 text-slate-500">
+<span class="material-symbols-outlined text-primary">settings</span>
+<span class="text-[10px] font-bold">أوتوماتيك</span>
+</div>
+<div class="flex flex-col items-center gap-1 text-slate-500">
+<span class="material-symbols-outlined text-primary">ev_station</span>
+<span class="text-[10px] font-bold">بنزين</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Card 4 -->
+<div class="bg-white dark:bg-slate-900 rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-800 shadow-sm hover:shadow-md transition-shadow group relative">
+<div class="relative h-48 overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Blue compact hatchback car outdoors" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBJvvR0JuJXuLMrOdOT6ZzbjybNTfX2kOnbx1sl5KD0g_zUVcPVcYIi3naAbhZZy9iZZwfb6I7zz45pvoKh2ciWOJ-s5enRuYkEt8fbEbqLLd241lJvLPfw0wGeRs2UkOVcXkGAGW2vWi2ANBS3_7d5jsp1GirT370Xuy1UoCMjStmV9qpJSWW9yfVqiaBX_peDVZP0z4qthL27kGtvjy8OSAukkxrGujjNZpMILnzkQ6wgTLIeCKBzBj-FN0KetKVjPSjceR7O0HQ"/>
+<button class="absolute top-3 left-3 w-10 h-10 bg-white/80 backdrop-blur rounded-full flex items-center justify-center text-slate-400 hover:text-red-500 transition-colors">
+<span class="material-symbols-outlined">favorite</span>
+</button>
+</div>
+<div class="p-5">
+<div class="flex justify-between items-start mb-2">
+<h3 class="font-bold text-lg leading-tight">كيا ريو 2015</h3>
+<p class="text-primary font-bold">8,200,000 ج.س</p>
+</div>
+<div class="flex items-center gap-1 text-slate-500 text-xs mb-4">
+<span class="material-symbols-outlined text-sm">location_on</span> أم درمان
+                                </div>
+<div class="grid grid-cols-3 gap-2 border-t border-slate-100 dark:border-slate-800 pt-4">
+<div class="flex flex-col items-center gap-1 text-slate-500">
+<span class="material-symbols-outlined text-primary">speed</span>
+<span class="text-[10px] font-bold">150,000 كم</span>
+</div>
+<div class="flex flex-col items-center gap-1 text-slate-500">
+<span class="material-symbols-outlined text-primary">settings</span>
+<span class="text-[10px] font-bold">يدوي</span>
+</div>
+<div class="flex flex-col items-center gap-1 text-slate-500">
+<span class="material-symbols-outlined text-primary">ev_station</span>
+<span class="text-[10px] font-bold">بنزين</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Card 5 -->
+<div class="bg-white dark:bg-slate-900 rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-800 shadow-sm hover:shadow-md transition-shadow group relative">
+<div class="relative h-48 overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Red pickup truck on desert road" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAjFkI7Clexfp8zHudmzvJFE8nBB5oCPtqpCrz7EdrpcHHrco1GXqmgvHUBZlQgAD_aGkkh4VEVYS849lVGCgqHS-oowLSQvy8Yma8nSXuYJDKIMNsqCd5o4d-6aVrwMz_QEiSRJbe5i36iA6KCyaTPBJazSsRR6FJLJt637IiiQ2yMP9CzVqUW0--j1bj9XAxnpPgXPTJxv-f6zsXFXiBR2w8YbPfHGTI2oOwldJ1RSBZZyNe0gHrdEvDDMrtG8HX_LbC_iCYKhOQ"/>
+<button class="absolute top-3 left-3 w-10 h-10 bg-white/80 backdrop-blur rounded-full flex items-center justify-center text-slate-400 hover:text-red-500 transition-colors">
+<span class="material-symbols-outlined">favorite</span>
+</button>
+</div>
+<div class="p-5">
+<div class="flex justify-between items-start mb-2">
+<h3 class="font-bold text-lg leading-tight">تويوتا هايلكس 2018</h3>
+<p class="text-primary font-bold">28,000,000 ج.س</p>
+</div>
+<div class="flex items-center gap-1 text-slate-500 text-xs mb-4">
+<span class="material-symbols-outlined text-sm">location_on</span> عطبرة
+                                </div>
+<div class="grid grid-cols-3 gap-2 border-t border-slate-100 dark:border-slate-800 pt-4">
+<div class="flex flex-col items-center gap-1 text-slate-500">
+<span class="material-symbols-outlined text-primary">speed</span>
+<span class="text-[10px] font-bold">110,000 كم</span>
+</div>
+<div class="flex flex-col items-center gap-1 text-slate-500">
+<span class="material-symbols-outlined text-primary">settings</span>
+<span class="text-[10px] font-bold">يدوي</span>
+</div>
+<div class="flex flex-col items-center gap-1 text-slate-500">
+<span class="material-symbols-outlined text-primary">ev_station</span>
+<span class="text-[10px] font-bold">ديزل</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Card 6 -->
+<div class="bg-white dark:bg-slate-900 rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-800 shadow-sm hover:shadow-md transition-shadow group relative">
+<div class="relative h-48 overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Dark gray crossover vehicle driving" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBrHA30dcqIQxKNwPv3JQQxHclaylS1XX8H_oT5F3Y2jc0jUytj9fygS0qhQDD5X_mZSSyPt9te1I2sba5uMeSUWmRHdUY7vAXwJf310gU6FKGD6JJ2F_e_fSbY5dnHyPVNo9eyinoWUKXc1U2aNVKpZ-kfXtsv6DlacVgg6DLtaN7yW3saTzeTV3DAGkBGurYDgSXIgWuVJY-wuAcNNzk-ObfNYonxgCkFcAsBx4yDFrz-W0wp8xy5ftpjcIL7IgMGPusJZ2ZKSfs"/>
+<button class="absolute top-3 left-3 w-10 h-10 bg-white/80 backdrop-blur rounded-full flex items-center justify-center text-slate-400 hover:text-red-500 transition-colors">
+<span class="material-symbols-outlined">favorite</span>
+</button>
+</div>
+<div class="p-5">
+<div class="flex justify-between items-start mb-2">
+<h3 class="font-bold text-lg leading-tight">مازدا CX-5 2022</h3>
+<p class="text-primary font-bold">19,500,000 ج.س</p>
+</div>
+<div class="flex items-center gap-1 text-slate-500 text-xs mb-4">
+<span class="material-symbols-outlined text-sm">location_on</span> الخرطوم، المعمورة
+                                </div>
+<div class="grid grid-cols-3 gap-2 border-t border-slate-100 dark:border-slate-800 pt-4">
+<div class="flex flex-col items-center gap-1 text-slate-500">
+<span class="material-symbols-outlined text-primary">speed</span>
+<span class="text-[10px] font-bold">25,000 كم</span>
+</div>
+<div class="flex flex-col items-center gap-1 text-slate-500">
+<span class="material-symbols-outlined text-primary">settings</span>
+<span class="text-[10px] font-bold">أوتوماتيك</span>
+</div>
+<div class="flex flex-col items-center gap-1 text-slate-500">
+<span class="material-symbols-outlined text-primary">ev_station</span>
+<span class="text-[10px] font-bold">بنزين</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Pagination -->
+<div class="mt-12 flex items-center justify-center gap-2">
+<button class="w-10 h-10 flex items-center justify-center rounded-lg border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 text-slate-500 hover:border-primary hover:text-primary transition-all">
+<span class="material-symbols-outlined">chevron_right</span>
+</button>
+<button class="w-10 h-10 flex items-center justify-center rounded-lg bg-primary text-white font-bold">1</button>
+<button class="w-10 h-10 flex items-center justify-center rounded-lg border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 text-slate-500 hover:border-primary hover:text-primary transition-all">2</button>
+<button class="w-10 h-10 flex items-center justify-center rounded-lg border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 text-slate-500 hover:border-primary hover:text-primary transition-all">3</button>
+<span class="mx-2 text-slate-400">...</span>
+<button class="w-10 h-10 flex items-center justify-center rounded-lg border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 text-slate-500 hover:border-primary hover:text-primary transition-all">12</button>
+<button class="w-10 h-10 flex items-center justify-center rounded-lg border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 text-slate-500 hover:border-primary hover:text-primary transition-all">
+<span class="material-symbols-outlined">chevron_left</span>
+</button>
+</div>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="bg-white dark:bg-slate-950 border-t border-slate-200 dark:border-slate-900 py-10 px-6 lg:px-20 mt-20">
+<div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-8">
+<div class="flex items-center gap-3 text-primary/50 grayscale hover:grayscale-0 transition-all cursor-pointer">
+<span class="material-symbols-outlined text-2xl">directions_car</span>
+<h2 class="text-xl font-bold tracking-tight">SudanCars</h2>
+</div>
+<div class="flex gap-8 text-sm font-medium text-slate-500">
+<a class="hover:text-primary transition-colors" href="#">عن المنصة</a>
+<a class="hover:text-primary transition-colors" href="#">اتصل بنا</a>
+<a class="hover:text-primary transition-colors" href="#">سياسة الخصوصية</a>
+<a class="hover:text-primary transition-colors" href="#">الشروط والأحكام</a>
+</div>
+<div class="flex gap-4">
+<a class="w-10 h-10 rounded-full bg-slate-100 dark:bg-slate-800 flex items-center justify-center hover:bg-primary hover:text-white transition-all" href="#">
+<span class="material-symbols-outlined text-lg">public</span>
+</a>
+<a class="w-10 h-10 rounded-full bg-slate-100 dark:bg-slate-800 flex items-center justify-center hover:bg-primary hover:text-white transition-all" href="#">
+<span class="material-symbols-outlined text-lg">alternate_email</span>
+</a>
+</div>
+</div>
+<div class="max-w-7xl mx-auto border-t border-slate-100 dark:border-slate-900 mt-10 pt-6 text-center text-xs text-slate-400">
+                جميع الحقوق محفوظة © 2024 SudanCars - منصة السيارات الأولى في السودان
+            </div>
+</footer>
+</div>
+</body></html>

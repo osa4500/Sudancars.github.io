@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+
+<html dir="rtl" lang="ar"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>الشروط والأحكام - SudanCars</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600;700;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#1152d4",
+                        "background-light": "#f6f6f8",
+                        "background-dark": "#101622",
+                    },
+                    fontFamily: {
+                        "display": ["Public Sans", "sans-serif"]
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style>
+        body {
+            font-family: 'Public Sans', sans-serif;
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 antialiased">
+<!-- Header / Top Navigation -->
+<header class="sticky top-0 z-50 w-full bg-white dark:bg-slate-900 border-b border-slate-200 dark:border-slate-800">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="flex items-center justify-between h-16">
+<div class="flex items-center gap-8">
+<div class="flex items-center gap-3">
+<div class="text-primary">
+<svg class="w-8 h-8" fill="none" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path clip-rule="evenodd" d="M24 0.757355L47.2426 24L24 47.2426L0.757355 24L24 0.757355ZM21 35.7574V12.2426L9.24264 24L21 35.7574Z" fill="currentColor" fill-rule="evenodd"></path>
+</svg>
+</div>
+<h2 class="text-xl font-bold tracking-tight text-slate-900 dark:text-white">SudanCars</h2>
+</div>
+<div class="hidden md:flex items-center bg-slate-100 dark:bg-slate-800 rounded-lg px-3 py-1.5 w-64">
+<span class="material-symbols-outlined text-slate-500 text-xl">search</span>
+<input class="bg-transparent border-none focus:ring-0 text-sm w-full placeholder-slate-500" placeholder="ابحث عن سيارة..." type="text"/>
+</div>
+</div>
+<nav class="hidden md:flex items-center gap-8">
+<a class="text-sm font-medium hover:text-primary transition-colors" href="#">الرئيسية</a>
+<a class="text-sm font-medium hover:text-primary transition-colors" href="#">سوق السيارات</a>
+<a class="text-sm font-medium hover:text-primary transition-colors" href="#">عن المنصة</a>
+<a class="text-sm font-medium hover:text-primary transition-colors" href="#">اتصل بنا</a>
+<button class="bg-primary text-white px-5 py-2 rounded-lg text-sm font-bold hover:bg-primary/90 transition-all">تسجيل الدخول</button>
+</nav>
+</div>
+</div>
+</header>
+<main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+<!-- Breadcrumbs -->
+<nav class="flex items-center gap-2 mb-8 text-sm text-slate-500 dark:text-slate-400">
+<a class="hover:text-primary" href="#">الرئيسية</a>
+<span class="material-symbols-outlined text-xs">chevron_left</span>
+<span class="text-slate-900 dark:text-white font-medium">الشروط والأحكام</span>
+</nav>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
+<!-- Sidebar Navigation -->
+<aside class="lg:col-span-3 space-y-6">
+<div class="bg-white dark:bg-slate-900 p-6 rounded-xl border border-slate-200 dark:border-slate-800 sticky top-24">
+<h3 class="text-lg font-bold mb-4 text-slate-900 dark:text-white border-b border-slate-100 dark:border-slate-800 pb-3">بنود الاتفاقية</h3>
+<nav class="flex flex-col gap-1">
+<a class="flex items-center gap-3 px-3 py-2.5 rounded-lg bg-primary/10 text-primary font-semibold" href="#intro">
+<span class="material-symbols-outlined">info</span>
+<span class="text-sm">المقدمة</span>
+</a>
+<a class="flex items-center gap-3 px-3 py-2.5 rounded-lg text-slate-600 dark:text-slate-400 hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors" href="#disclaimer">
+<span class="material-symbols-outlined">gavel</span>
+<span class="text-sm">إخلاء المسؤولية</span>
+</a>
+<a class="flex items-center gap-3 px-3 py-2.5 rounded-lg text-slate-600 dark:text-slate-400 hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors" href="#fees">
+<span class="material-symbols-outlined">credit_card</span>
+<span class="text-sm">العمولات</span>
+</a>
+<a class="flex items-center gap-3 px-3 py-2.5 rounded-lg text-slate-600 dark:text-slate-400 hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors" href="#anti-brokerage">
+<span class="material-symbols-outlined">shield</span>
+<span class="text-sm">محاربة السمسرة</span>
+</a>
+<a class="flex items-center gap-3 px-3 py-2.5 rounded-lg text-slate-600 dark:text-slate-400 hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors" href="#privacy">
+<span class="material-symbols-outlined">lock</span>
+<span class="text-sm">حماية البيانات</span>
+</a>
+</nav>
+</div>
+</aside>
+<!-- Content Area -->
+<div class="lg:col-span-9 space-y-8">
+<div class="bg-white dark:bg-slate-900 p-8 rounded-xl border border-slate-200 dark:border-slate-800">
+<header class="mb-10">
+<h1 class="text-4xl font-black text-slate-900 dark:text-white mb-4 leading-tight">الشروط والأحكام</h1>
+<p class="text-slate-600 dark:text-slate-400 text-lg leading-relaxed">
+                            يرجى قراءة اتفاقية الاستخدام بعناية قبل البدء في استخدام منصة SudanCars. بمجرد استخدامك للمنصة، فإنك توافق على الالتزام بكافة الشروط الموضحة أدناه.
+                        </p>
+</header>
+<!-- Section: Introduction -->
+<section class="scroll-mt-24 mb-12" id="intro">
+<div class="flex items-center gap-3 mb-4">
+<div class="w-1.5 h-8 bg-primary rounded-full"></div>
+<h2 class="text-2xl font-bold text-slate-900 dark:text-white">1. مقدمة عن المنصة</h2>
+</div>
+<div class="text-slate-700 dark:text-slate-300 leading-8 space-y-4">
+<p>تعتبر منصة SudanCars بمثابة "جسر عبور" تقني يربط بين البائع والمشتري في سوق السيارات السوداني. نحن نوفر الأدوات والبيانات اللازمة لتسهيل عملية العرض والطلب.</p>
+<p>دورنا يقتصر على الربط المعلوماتي ولا نعتبر طرفاً في عملية البيع أو الشراء الفعلية التي تتم خارج إطار الموقع الإلكتروني.</p>
+</div>
+</section>
+<!-- Section: Disclaimer -->
+<section class="scroll-mt-24 mb-12" id="disclaimer">
+<div class="flex items-center gap-3 mb-4">
+<div class="w-1.5 h-8 bg-primary rounded-full"></div>
+<h2 class="text-2xl font-bold text-slate-900 dark:text-white">2. إخلاء المسؤولية القانونية</h2>
+</div>
+<div class="bg-red-50 dark:bg-red-900/10 border-r-4 border-red-500 p-6 rounded-lg mb-6">
+<p class="text-slate-800 dark:text-slate-200 font-medium leading-8">
+<span class="material-symbols-outlined text-red-500 align-middle ml-2">warning</span>
+                                تؤكد SudanCars أنها لا تتحمل أي مسؤولية قانونية عن صحة المستندات أو حالة السيارة الفنية. يجب على الطرفين (البائع والمشتري) التوجه للجهات القضائية المختصة (المحاكم أو مكاتب التوثيق) لإتمام عملية المبايعة وتوثيق العقود رسمياً لضمان الحقوق القانونية.
+                            </p>
+</div>
+<p class="text-slate-700 dark:text-slate-300 leading-8">نحن لا نقدم أي ضمانات صريحة أو ضمنية حول السيارات المعروضة، والمعلومات المتوفرة هي مسؤولية صاحب الإعلان وحده.</p>
+</section>
+<!-- Section: Fees -->
+<section class="scroll-mt-24 mb-12" id="fees">
+<div class="flex items-center gap-3 mb-4">
+<div class="w-1.5 h-8 bg-primary rounded-full"></div>
+<h2 class="text-2xl font-bold text-slate-900 dark:text-white">3. العمولات والرسوم</h2>
+</div>
+<div class="bg-slate-50 dark:bg-slate-800/50 p-6 rounded-xl border border-slate-200 dark:border-slate-800 flex flex-col md:flex-row items-center gap-6">
+<div class="bg-primary/10 p-4 rounded-full">
+<span class="material-symbols-outlined text-primary text-4xl">payments</span>
+</div>
+<div>
+<h4 class="text-xl font-bold text-slate-900 dark:text-white mb-1">رسوم الخدمة الثابتة</h4>
+<p class="text-slate-600 dark:text-slate-400">تفرض المنصة رسماً رمزياً قدره <span class="text-primary font-black text-2xl mx-1">2,000</span> جنيه سوداني فقط مقابل خدمات الإدراج والربط.</p>
+</div>
+</div>
+</section>
+<!-- Section: Anti-Brokerage -->
+<section class="scroll-mt-24 mb-12" id="anti-brokerage">
+<div class="flex items-center gap-3 mb-4">
+<div class="w-1.5 h-8 bg-primary rounded-full"></div>
+<h2 class="text-2xl font-bold text-slate-900 dark:text-white">4. محاربة السمسرة غير القانونية</h2>
+</div>
+<div class="text-slate-700 dark:text-slate-300 leading-8 space-y-4">
+<p>تلتزم SudanCars بتوفير بيئة تداول شفافة ومباشرة. يمنع منعاً باتاً ممارسة أي نشاط "سمسرة" غير مرخص أو محاولة التلاعب بالأسعار عبر وسطاء غير معتمدين من قبل المنصة.</p>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
+<div class="flex items-start gap-3 p-4 bg-slate-50 dark:bg-slate-800 rounded-lg">
+<span class="material-symbols-outlined text-primary">check_circle</span>
+<p class="text-sm">يمنع نشر إعلانات نيابة عن أشخاص آخرين دون تفويض رسمي.</p>
+</div>
+<div class="flex items-start gap-3 p-4 bg-slate-50 dark:bg-slate-800 rounded-lg">
+<span class="material-symbols-outlined text-primary">check_circle</span>
+<p class="text-sm">يحظر طلب عمولات إضافية خارج الرسوم المحددة في المنصة.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Section: Privacy -->
+<section class="scroll-mt-24" id="privacy">
+<div class="flex items-center gap-3 mb-4">
+<div class="w-1.5 h-8 bg-primary rounded-full"></div>
+<h2 class="text-2xl font-bold text-slate-900 dark:text-white">5. حماية البيانات والمستندات</h2>
+</div>
+<div class="text-slate-700 dark:text-slate-300 leading-8">
+<p class="mb-4">خصوصية مستخدمينا هي أولويتنا القصوى. عند استخدام ميزة "تجهيز العقد"، قد تطلب المنصة صوراً للمستندات الرسمية (مثل جواز السفر أو الهوية الوطنية).</p>
+<ul class="list-disc list-inside space-y-2 pr-4 text-slate-600 dark:text-slate-400">
+<li>يتم تشفير كافة المستندات المرفوعة ولا يتم الاطلاع عليها إلا لأغراض التحقق.</li>
+<li>لا يتم مشاركة بياناتك الشخصية مع أطراف ثالثة لأغراض تسويقية.</li>
+<li>يتم حذف المستندات الحساسة تلقائياً من خوادمنا بعد فترة محددة من إتمام المعاملة.</li>
+</ul>
+</div>
+</section>
+</div>
+<!-- Call to Action / Footer of terms -->
+<div class="bg-primary p-8 rounded-xl text-white flex flex-col md:flex-row items-center justify-between gap-6">
+<div>
+<h3 class="text-xl font-bold mb-2">هل لديك استفسار حول البنود؟</h3>
+<p class="text-white/80">فريقنا القانوني والتقني متاح للإجابة على جميع تساؤلاتكم.</p>
+</div>
+<button class="bg-white text-primary px-8 py-3 rounded-lg font-bold hover:bg-slate-100 transition-colors whitespace-nowrap">
+                        تواصل معنا الآن
+                    </button>
+</div>
+</div>
+</div>
+</main>
+<footer class="bg-white dark:bg-slate-900 border-t border-slate-200 dark:border-slate-800 py-12 mt-12">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+<div class="col-span-1 md:col-span-1">
+<div class="flex items-center gap-3 mb-6">
+<div class="text-primary">
+<svg class="w-6 h-6" fill="none" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path d="M24 0.757355L47.2426 24L24 47.2426L0.757355 24L24 0.757355ZM21 35.7574V12.2426L9.24264 24L21 35.7574Z" fill="currentColor"></path>
+</svg>
+</div>
+<h2 class="text-lg font-bold text-slate-900 dark:text-white">SudanCars</h2>
+</div>
+<p class="text-slate-500 text-sm leading-relaxed">أكبر منصة لبيع وشراء السيارات في السودان. نوفر لك الجودة والأمان في كل خطوة.</p>
+</div>
+<div>
+<h4 class="font-bold mb-4 text-slate-900 dark:text-white">روابط سريعة</h4>
+<ul class="space-y-2 text-sm text-slate-500">
+<li><a class="hover:text-primary" href="#">البحث عن سيارة</a></li>
+<li><a class="hover:text-primary" href="#">أضف إعلانك</a></li>
+<li><a class="hover:text-primary" href="#">الأسئلة الشائعة</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-bold mb-4 text-slate-900 dark:text-white">القانونية</h4>
+<ul class="space-y-2 text-sm text-slate-500">
+<li><a class="text-primary font-semibold" href="#">الشروط والأحكام</a></li>
+<li><a class="hover:text-primary" href="#">سياسة الخصوصية</a></li>
+<li><a class="hover:text-primary" href="#">قواعد النشر</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-bold mb-4 text-slate-900 dark:text-white">تابعنا</h4>
+<div class="flex gap-4">
+<a class="w-10 h-10 rounded-full bg-slate-100 dark:bg-slate-800 flex items-center justify-center text-slate-600 hover:bg-primary hover:text-white transition-all" href="#">
+<span class="material-symbols-outlined">public</span>
+</a>
+<a class="w-10 h-10 rounded-full bg-slate-100 dark:bg-slate-800 flex items-center justify-center text-slate-600 hover:bg-primary hover:text-white transition-all" href="#">
+<span class="material-symbols-outlined">mail</span>
+</a>
+</div>
+</div>
+</div>
+<div class="border-t border-slate-100 dark:border-slate-800 mt-12 pt-8 text-center text-slate-400 text-xs">
+                © 2024 SudanCars. جميع الحقوق محفوظة.
+            </div>
+</div>
+</footer>
+</body></html>

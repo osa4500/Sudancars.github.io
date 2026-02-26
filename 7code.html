@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="ar"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&amp;family=Noto+Sans+Arabic:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#137fec",
+                        "background-light": "#f6f7f8",
+                        "background-dark": "#101922",
+                    },
+                    fontFamily: {
+                        "display": ["Noto Sans Arabic", "Inter", "sans-serif"]
+                    },
+                    borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" },
+                },
+            },
+        }
+    </script>
+<title>تفاصيل السيارة - SudanCars</title>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-slate-100">
+<div class="relative flex h-auto min-h-screen w-full flex-col group/design-root overflow-x-hidden">
+<div class="layout-container flex h-full grow flex-col">
+<header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-slate-200 dark:border-slate-800 bg-white dark:bg-background-dark px-6 lg:px-40 py-3 sticky top-0 z-50">
+<div class="flex items-center gap-8">
+<div class="flex items-center gap-3 text-primary">
+<div class="size-8">
+<svg fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_6_330)">
+<path clip-rule="evenodd" d="M24 0.757355L47.2426 24L24 47.2426L0.757355 24L24 0.757355ZM21 35.7574V12.2426L9.24264 24L21 35.7574Z" fill="currentColor" fill-rule="evenodd"></path>
+</g>
+<defs>
+<clipPath id="clip0_6_330"><rect fill="white" height="48" width="48"></rect></clipPath>
+</defs>
+</svg>
+</div>
+<h2 class="text-slate-900 dark:text-slate-100 text-xl font-bold leading-tight tracking-[-0.015em]">SudanCars</h2>
+</div>
+<label class="hidden md:flex flex-col min-w-40 h-10 max-w-64">
+<div class="flex w-full flex-1 items-stretch rounded-lg h-full">
+<div class="text-slate-500 flex border-none bg-slate-100 dark:bg-slate-800 items-center justify-center pl-4 rounded-r-lg" data-icon="search">
+<span class="material-symbols-outlined">search</span>
+</div>
+<input class="form-input flex w-full min-w-0 flex-1 border-none bg-slate-100 dark:bg-slate-800 focus:ring-0 h-full placeholder:text-slate-500 px-4 rounded-l-lg text-base" placeholder="ابحث عن سيارة..." value=""/>
+</div>
+</label>
+</div>
+<div class="flex flex-1 justify-end gap-6 items-center">
+<nav class="hidden lg:flex items-center gap-8">
+<a class="text-slate-700 dark:text-slate-300 text-sm font-medium hover:text-primary transition-colors" href="#">الرئيسية</a>
+<a class="text-slate-700 dark:text-slate-300 text-sm font-medium hover:text-primary transition-colors" href="#">بيع سيارة</a>
+<a class="text-slate-700 dark:text-slate-300 text-sm font-medium hover:text-primary transition-colors" href="#">البحث</a>
+<a class="text-slate-700 dark:text-slate-300 text-sm font-medium hover:text-primary transition-colors" href="#">اتصل بنا</a>
+</nav>
+<button class="flex min-w-[100px] cursor-pointer items-center justify-center rounded-lg h-10 px-5 bg-primary text-white text-sm font-bold shadow-sm hover:bg-primary/90 transition-all">
+<span>تسجيل الدخول</span>
+</button>
+</div>
+</header>
+<main class="flex-1 px-4 lg:px-40 py-6">
+<nav class="flex items-center gap-2 mb-6 text-sm">
+<a class="text-slate-500 hover:text-primary" href="#">الرئيسية</a>
+<span class="text-slate-400 material-symbols-outlined text-xs">chevron_left</span>
+<a class="text-slate-500 hover:text-primary" href="#">سيارات للبيع</a>
+<span class="text-slate-400 material-symbols-outlined text-xs">chevron_left</span>
+<span class="text-slate-900 dark:text-slate-100 font-medium">تويوتا لاندكروزر 2022</span>
+</nav>
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+<div class="lg:col-span-2 space-y-6">
+<div class="rounded-xl overflow-hidden bg-white dark:bg-slate-900 shadow-sm">
+<div class="relative aspect-video bg-cover bg-center" data-alt="White Toyota Land Cruiser 2022 front view" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAXfP3XC40dBD4wR9cN7JRc3pclfzzLMpNCphdvOuO-v7DdPhja0GEpXYL7VF0JhBakvpycf1qpBmL7ZM5F-NIbDpP05Y_yqRNxDg_rJTnEUtzzhD55UEAj5IOJZQ2QzvRxgmUanznpYH72gmDXk-naGUUdno1ZMK59-Sstl9ZpVTcRDTY-cMXAG5j50OMvgkIh1AC41YS5_zmuW6th0ZNgNfKT86qnOTtZNWXcWeWCXTr8LmACsYb-KfDEtgj7P7QhOaPWe_krkrc");'>
+<div class="absolute bottom-4 right-4 bg-black/60 text-white px-3 py-1 rounded-full text-sm flex items-center gap-2">
+<span class="material-symbols-outlined text-base">photo_library</span>
+<span>1/12</span>
+</div>
+</div>
+<div class="grid grid-cols-4 gap-2 p-2">
+<div class="aspect-square bg-cover bg-center rounded-lg cursor-pointer border-2 border-primary" data-alt="Land Cruiser front perspective view" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBQLlHEspqohMJPMwIoAxKy-AWeIXNNPkGiwFVEzGn7xwLXYAaoOJesl9i2D1pD6UZO-SShckeC7hGUjQoQJy43MjGjbxyZp3aPaV0SS06kxmdIyODDSaNQQ18r7ziNTsk-uOwtxCjXU1UcZosSPmdXpyC62NrCXeUWwuKYONHgGYA4E0jbvVHrXzEkMn7lyMXvFj0OTS4azs_i0Souso7ViX5OIu_EMwola5VN_HD74kfSkoodTcs5wRpx65gS7iDM1ycLoHj36LA");'></div>
+<div class="aspect-square bg-cover bg-center rounded-lg cursor-pointer opacity-70 hover:opacity-100" data-alt="Land Cruiser interior dashboard view" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCpb2Bglwj_gCy6b1rfV_7__iBy36nlgpjvk3a8fCmiNVE2RShU4h1iEIbKkb_HS2zpBIkC_vQBZ8z-RRC3TkrJAJ34Gsf9ZKhXTpYowrHY7M9hEUBsS7ZRty8segCuplnss0_5potabJuQqj0wumOjf_sr4sweUN9pzOcL4PnoBQGkAijLPVIGDyZHhKLJjPR3IAIWLYGyk7Xje1r0tSm8Mcul_jlPLOaoNW7WOWWO6C2a9QFpHnLx7n_RSsqUVhPuaav7C01G9bQ");'></div>
+<div class="aspect-square bg-cover bg-center rounded-lg cursor-pointer opacity-70 hover:opacity-100" data-alt="Land Cruiser rear view profile" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBKeKR_XzuocNuA8-A1lu3mDoFyAO3-sUY-GWsQ4aVCOdSxyMItYQnCVhHEsA2R0-ubZvwBv1Ej7MtHRZTttlaPZpp7fLnXfKItbln4W6pFIuyc0_1K7PHftAquDSLfrJ1ofUjdad-bOZtKdoBsy-hAeUNnBxn7FBbI0ZI6ivYbxn74x4E7ppDNyoK2Yi4QAq22FYcFIUAPklS6Dxnw8KhWH0rvND-c9n06cu129ruvFl9fCpXgYJlRBPDpVk89U9QS-XneuIuiKyA");'></div>
+<div class="relative aspect-square bg-cover bg-center rounded-lg cursor-pointer opacity-70 hover:opacity-100" data-alt="Land Cruiser wheel and alloy detail" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDtmXvqvjTe7ye5FUbLQv8RrkQp38PjiCIS-H9edpIrDWGcsQPnPT2ud9GNlantIWMvZT2385E8cO24whs1LYRxvWUg16qfM3kZmY5_bC1ytYNWos0-FGKVqj4FLq6cR1j2lSXHdhb5MvSTc6wA5zfq6QdhzrnzCyn9xT3Xi_ovXt595ikrjWdMrAkNLFZxIBXR5eVF8k58IhcUpNXCkr1eLhZQ_PdGMfXV4tRSo296nASQKObBvHJkAHkZW5Xk-TatSLZHDQi-Xlg");'>
+<div class="absolute inset-0 bg-black/40 flex items-center justify-center rounded-lg">
+<span class="text-white font-bold text-lg">+8</span>
+</div>
+</div>
+</div>
+</div>
+<div class="p-6 bg-white dark:bg-slate-900 rounded-xl shadow-sm">
+<div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
+<div>
+<h1 class="text-3xl font-black text-slate-900 dark:text-slate-100 mb-2">تويوتا لاندكروزر 2022 VXR</h1>
+<div class="flex items-center gap-4 text-slate-500 text-sm">
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-sm">schedule</span> قبل ساعتين</span>
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-sm">location_on</span> الخرطوم، المعمورة</span>
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-sm">visibility</span> 1,240 مشاهدة</span>
+</div>
+</div>
+<div class="text-right">
+<p class="text-primary text-3xl font-black">45,000,000</p>
+<p class="text-slate-500 font-medium">جنيه سوداني</p>
+</div>
+</div>
+</div>
+<div class="p-6 bg-white dark:bg-slate-900 rounded-xl shadow-sm">
+<h3 class="text-lg font-bold mb-6 flex items-center gap-2">
+<span class="material-symbols-outlined text-primary">info</span>
+                                المواصفات الفنية
+                            </h3>
+<div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+<div class="flex flex-col gap-1">
+<span class="text-slate-500 text-xs">المسافة المقطوعة</span>
+<div class="flex items-center gap-2 font-semibold">
+<span class="material-symbols-outlined text-slate-400">speed</span>
+                                        12,000 كم
+                                    </div>
+</div>
+<div class="flex flex-col gap-1">
+<span class="text-slate-500 text-xs">نوع المحرك</span>
+<div class="flex items-center gap-2 font-semibold">
+<span class="material-symbols-outlined text-slate-400">mode_fan</span>
+                                        بنزين - V6
+                                    </div>
+</div>
+<div class="flex flex-col gap-1">
+<span class="text-slate-500 text-xs">ناقل الحركة</span>
+<div class="flex items-center gap-2 font-semibold">
+<span class="material-symbols-outlined text-slate-400">settings_input_component</span>
+                                        أوتوماتيك
+                                    </div>
+</div>
+<div class="flex flex-col gap-1">
+<span class="text-slate-500 text-xs">اللون الخارجي</span>
+<div class="flex items-center gap-2 font-semibold">
+<span class="material-symbols-outlined text-slate-400">palette</span>
+                                        أبيض لؤلؤي
+                                    </div>
+</div>
+<div class="flex flex-col gap-1">
+<span class="text-slate-500 text-xs">حالة الهيكل</span>
+<div class="flex items-center gap-2 font-semibold">
+<span class="material-symbols-outlined text-slate-400">verified</span>
+                                        وكالة (بدون صدمات)
+                                    </div>
+</div>
+<div class="flex flex-col gap-1">
+<span class="text-slate-500 text-xs">سنة الصنع</span>
+<div class="flex items-center gap-2 font-semibold">
+<span class="material-symbols-outlined text-slate-400">calendar_month</span>
+                                        2022
+                                    </div>
+</div>
+<div class="flex flex-col gap-1">
+<span class="text-slate-500 text-xs">الدفع</span>
+<div class="flex items-center gap-2 font-semibold">
+<span class="material-symbols-outlined text-slate-400">forklift</span>
+                                        دفع رباعي 4WD
+                                    </div>
+</div>
+<div class="flex flex-col gap-1">
+<span class="text-slate-500 text-xs">عدد المقاعد</span>
+<div class="flex items-center gap-2 font-semibold">
+<span class="material-symbols-outlined text-slate-400">airline_seat_recline_extra</span>
+                                        7 مقاعد
+                                    </div>
+</div>
+</div>
+</div>
+<div class="p-6 bg-white dark:bg-slate-900 rounded-xl shadow-sm">
+<h3 class="text-lg font-bold mb-4">وصف السيارة</h3>
+<p class="text-slate-700 dark:text-slate-300 leading-relaxed">
+                                تويوتا لاندكروزر 2022 فئة VXR، السيارة بحالة الوكالة تماماً، صيانة دورية منتظمة في الوكيل. استخدام شخصي خفيف جداً. المواصفات تشمل: فتحة سقف، كراسي جلد كهربائية مع تبريد وتسخين، شاشات خلفية، نظام صوتي JBL، رادار، تحديد مسار، ونظام الزحف. السيارة جاهزة للفحص في أي مكان.
+                            </p>
+</div>
+</div>
+<div class="space-y-6">
+<div class="p-6 bg-white dark:bg-slate-900 rounded-xl shadow-sm border border-slate-100 dark:border-slate-800">
+<h3 class="text-lg font-bold mb-4">معلومات البائع</h3>
+<div class="flex items-center gap-4 mb-6">
+<div class="size-16 rounded-full bg-cover bg-center border-2 border-primary/20" data-alt="Seller profile picture" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDye1ZkEDTTmDCND5M1RLZpLGauvgbfemGn6DK-qzN8py1Qnof8txyS8nobrMfDw5rUsjikzfaEiCCdRYqRyz_jVVglkCXBXdlwiKAJOo2hhsgLhqqffRucqm5AmcRYD-JkN-d5Scf_TLw_rPeskZUxLas95rcjPBePsvz39oq0_wxS-YLmz7WNEYyRKgApjgqcycFHJy8CuPizv__CR3y3-N5atL0ggb_j6rz2NjEwxMwo5Uqa9GWkU2bMBEqXVX_VAJYqNhjiC4w");'></div>
+<div>
+<p class="font-bold text-lg text-slate-900 dark:text-slate-100">أحمد محمد عثمان</p>
+<p class="text-slate-500 text-sm">عضو منذ يناير 2021</p>
+<div class="flex items-center gap-1 mt-1">
+<span class="material-symbols-outlined text-yellow-400 text-sm fill-current">star</span>
+<span class="text-sm font-semibold">4.8</span>
+<span class="text-slate-400 text-xs">(24 تقييم)</span>
+</div>
+</div>
+</div>
+<div class="space-y-3">
+<button class="w-full flex items-center justify-center gap-2 bg-primary text-white py-4 rounded-lg font-bold hover:bg-primary/90 transition-all shadow-md">
+<span class="material-symbols-outlined">call</span>
+                                    اتصال مباشر
+                                </button>
+<a class="w-full flex items-center justify-center gap-3 bg-[#25D366] text-white py-4 rounded-lg font-bold hover:bg-[#128C7E] transition-all shadow-lg scale-105 transform" href="https://wa.me/qr/5V24KV2WD3NBA1" target="_blank">
+<svg class="size-6 fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"></path>
+</svg>
+<span>تواصل معنا عبر الواتساب</span>
+</a>
+<button class="w-full flex items-center justify-center gap-2 bg-slate-100 dark:bg-slate-800 text-slate-900 dark:text-white py-3 rounded-lg font-bold hover:bg-slate-200 dark:hover:bg-slate-700 transition-all">
+<span class="material-symbols-outlined">mail</span>
+                                    إرسال رسالة
+                                </button>
+</div>
+</div>
+<div class="p-6 bg-white dark:bg-slate-900 rounded-xl shadow-sm border border-slate-100 dark:border-slate-800">
+<h3 class="text-lg font-bold mb-4">موقع البائع</h3>
+<div class="w-full aspect-square rounded-lg bg-slate-200 dark:bg-slate-800 overflow-hidden relative" data-location="Khartoum">
+<img alt="Map of Khartoum" class="w-full h-full object-cover" data-alt="Satellite map view of Khartoum city" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDdpaMJXE2YcMIhKXDncQJlXOkmVqm-I3atJszkhegh0XLqdZSJw473qDt_xojO3TDm0aebe1X2LkhsW6dqJf3ORcfTQcWoj3v8XgBypEhrdHTn1ROTOZg8_MgPlSKVo4K5b64dFwSDvof5pM_zK5Dq8jlCT5Iw4MjOc3kG4aPn_81CsFhNl2gvX2f4bU0iQx0a_O_UGnVUDF83zhK1TlVp7495dvO7ATZ0Wqnv5Znkf6UxtR17FLJ3KYzI5CYhGQFdOFUyoxa-CpI"/>
+<div class="absolute inset-0 flex items-center justify-center">
+<div class="size-12 bg-primary/20 rounded-full flex items-center justify-center border-2 border-primary animate-pulse">
+<span class="material-symbols-outlined text-primary fill-current">location_on</span>
+</div>
+</div>
+<div class="absolute bottom-2 left-2 right-2 bg-white/90 dark:bg-slate-900/90 p-2 rounded text-xs text-center shadow-md">
+                                    الخرطوم، حي المعمورة، شارع الستين
+                                </div>
+</div>
+</div>
+<div class="p-4 bg-primary/5 rounded-xl border border-primary/20">
+<h4 class="text-sm font-bold text-primary mb-2 flex items-center gap-2">
+<span class="material-symbols-outlined text-sm">shield</span>
+                                نصيحة أمان
+                            </h4>
+<p class="text-xs text-slate-600 dark:text-slate-400 leading-relaxed">
+                                نوصي دائماً بمعاينة السيارة على أرض الواقع وفحصها في مركز فني معتمد قبل إتمام عملية الشراء أو تحويل أي مبالغ مالية.
+                            </p>
+</div>
+</div>
+</div>
+<section class="mt-12">
+<div class="flex items-center justify-between mb-6">
+<h3 class="text-2xl font-black">سيارات مشابهة قد تعجبك</h3>
+<a class="text-primary font-bold hover:underline" href="#">عرض المزيد</a>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+<div class="bg-white dark:bg-slate-900 rounded-xl overflow-hidden shadow-sm border border-slate-100 dark:border-slate-800 hover:shadow-md transition-shadow group">
+<div class="aspect-[4/3] bg-cover bg-center overflow-hidden" data-alt="Toyota Land Cruiser 2021" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDGOFkpktthT7LZtnM_d0csweLG3VxqGp-unWOdFjxEgYRxTGxJiPeQE5Gh3Y_aUf-BSAMUq53D6GetuH0LkutcqplZY_cUQMYxqebA5_a3KcLbQmRnNSPBkXE2lG95Bidc9SDdUlguJFpzhPcb46mQqQGNCgJYyUq3j5Eg2x50yLnxcmv7Jb4Bh-ocCsAlCjYwlDjbszmv688BX5SBgEDV_BoKoCESykE-8Z3Uv94y8Nvc4aBKmge2mAq2x72WfFJegty3m8H41lY");'>
+<div class="p-2 flex justify-between">
+<span class="bg-primary text-white text-[10px] px-2 py-0.5 rounded font-bold">مميز</span>
+<button class="bg-white/80 p-1 rounded-full text-slate-900 hover:text-red-500">
+<span class="material-symbols-outlined text-sm">favorite</span>
+</button>
+</div>
+</div>
+<div class="p-4">
+<h4 class="font-bold text-slate-900 dark:text-slate-100 mb-1 group-hover:text-primary transition-colors">لاندكروزر GXR 2021</h4>
+<p class="text-xs text-slate-500 mb-3 flex items-center gap-1">
+<span class="material-symbols-outlined text-xs">speed</span> 45,000 كم
+                                </p>
+<div class="flex items-center justify-between">
+<span class="text-primary font-black">38,000,000 ج.س</span>
+<span class="text-[10px] text-slate-400">قبل يوم</span>
+</div>
+</div>
+</div>
+<div class="bg-white dark:bg-slate-900 rounded-xl overflow-hidden shadow-sm border border-slate-100 dark:border-slate-800 hover:shadow-md transition-shadow group">
+<div class="aspect-[4/3] bg-cover bg-center" data-alt="Nissan Patrol 2022" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBJUkzxpKUrRMMAONvq52-1SZ22x26iSruhs0Xh1Z6TU-JzF91FkalMZEgbPEtT0EzA-havMT3Ox4JD2gCPoICvzqzFjrLiQ85JFXNwzc9EncdVXLI3TdmN6P_AeYlCkTf_C7niqB4Ozn_XunbO7Q07F4BzZj2XNgMgHpfBUCJ3rieu_BEx1iArLWPQVrrjcHVXhpYzbhqFXet6Aa2ciajEf_ZkTpixlQ3O9zvsjwpdWFsqQDDyLblDJUK30GEr-FKylWstSKb4z5E");'></div>
+<div class="p-4">
+<h4 class="font-bold text-slate-900 dark:text-slate-100 mb-1 group-hover:text-primary transition-colors">نيسان باترول 2022 SE</h4>
+<p class="text-xs text-slate-500 mb-3 flex items-center gap-1">
+<span class="material-symbols-outlined text-xs">speed</span> 20,000 كم
+                                </p>
+<div class="flex items-center justify-between">
+<span class="text-primary font-black">42,500,000 ج.س</span>
+<span class="text-[10px] text-slate-400">قبل 3 ساعات</span>
+</div>
+</div>
+</div>
+<div class="bg-white dark:bg-slate-900 rounded-xl overflow-hidden shadow-sm border border-slate-100 dark:border-slate-800 hover:shadow-md transition-shadow group">
+<div class="aspect-[4/3] bg-cover bg-center" data-alt="Lexus LX570" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCXgID2Hh05wmTE55DA1rT3VjZcITdWzj3FU22Ce5e7gdsZJlyhi1nfAxtUKTb0a8vQk6ENcKJ2AAKExuEi2OVihmGmJYqZujIVN6oNa4I1JSijLigZWf1DUGnYCejn22iXTnmWYwwBVaoEG6ygwNJ5X6DwZEDbfSMnwNG2WBjYO_z6u9qXHBFWb18n8A8GSg_8h3tmcCFJOW8KNWGeU2gUSvGA6Q5XDr6u14vtF1cG1ieOtBr24KV50KGBgQMAZQ9uKJhzCGtWKPA");'></div>
+<div class="p-4">
+<h4 class="font-bold text-slate-900 dark:text-slate-100 mb-1 group-hover:text-primary transition-colors">لكزس LX570 2020</h4>
+<p class="text-xs text-slate-500 mb-3 flex items-center gap-1">
+<span class="material-symbols-outlined text-xs">speed</span> 65,000 كم
+                                </p>
+<div class="flex items-center justify-between">
+<span class="text-primary font-black">55,000,000 ج.س</span>
+<span class="text-[10px] text-slate-400">قبل يومين</span>
+</div>
+</div>
+</div>
+<div class="bg-white dark:bg-slate-900 rounded-xl overflow-hidden shadow-sm border border-slate-100 dark:border-slate-800 hover:shadow-md transition-shadow group">
+<div class="aspect-[4/3] bg-cover bg-center" data-alt="Toyota Land Cruiser VXR 2022 Black" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAiXJ8mrchT1gg3PsOeZnNeVbYpL3EHD2uIdfNVaikiyc58SJjcv-lVeZSafWINAiMXfCq-Q7bWCK-UNwEPDsOfls0clg3tUzMMpfFIw4KwIdjTY25kHz-nd-sXQBsR41xOia7Q0O_UkVHo0iYBgSbHO0WiCKhd-cPnPGoDtNXscJJN9KnoqA0ur3WYHmbpXUenFu7lVW1DrKIwzxE5wwl8qZhFfH91ux-rGcuoIXMADZAJ1a1kLTxrNeRiawjFElhA-nFXS57jRvA");'></div>
+<div class="p-4">
+<h4 class="font-bold text-slate-900 dark:text-slate-100 mb-1 group-hover:text-primary transition-colors">لاندكروزر 2022 - أسود</h4>
+<p class="text-xs text-slate-500 mb-3 flex items-center gap-1">
+<span class="material-symbols-outlined text-xs">speed</span> 5,000 كم
+                                </p>
+<div class="flex items-center justify-between">
+<span class="text-primary font-black">46,800,000 ج.س</span>
+<span class="text-[10px] text-slate-400">الآن</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<footer class="bg-white dark:bg-slate-950 border-t border-slate-200 dark:border-slate-800 mt-20 py-12 px-4 lg:px-40">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
+<div class="col-span-1 md:col-span-1">
+<div class="flex items-center gap-3 text-primary mb-6">
+<div class="size-6">
+<svg fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path clip-rule="evenodd" d="M24 0.757355L47.2426 24L24 47.2426L0.757355 24L24 0.757355ZM21 35.7574V12.2426L9.24264 24L21 35.7574Z" fill="currentColor" fill-rule="evenodd"></path>
+</svg>
+</div>
+<h2 class="text-slate-900 dark:text-slate-100 text-lg font-bold">SudanCars</h2>
+</div>
+<p class="text-slate-500 text-sm leading-relaxed">
+                            أكبر منصة لبيع وشراء السيارات في السودان. نربط البائعين بالمشترين بسهولة وأمان.
+                        </p>
+</div>
+<div>
+<h4 class="font-bold mb-4">روابط سريعة</h4>
+<ul class="space-y-2 text-sm text-slate-500">
+<li><a class="hover:text-primary" href="#">عن المنصة</a></li>
+<li><a class="hover:text-primary" href="#">شروط الاستخدام</a></li>
+<li><a class="hover:text-primary" href="#">سياسة الخصوصية</a></li>
+<li><a class="hover:text-primary" href="#">مركز المساعدة</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-bold mb-4">التصنيفات</h4>
+<ul class="space-y-2 text-sm text-slate-500">
+<li><a class="hover:text-primary" href="#">سيارات للبيع</a></li>
+<li><a class="hover:text-primary" href="#">شاحنات ومعدات ثقيلة</a></li>
+<li><a class="hover:text-primary" href="#">قطع غيار</a></li>
+<li><a class="hover:text-primary" href="#">دراجات نارية</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-bold mb-4">تواصل معنا</h4>
+<div class="flex flex-col gap-4">
+<a class="flex items-center gap-2 text-slate-600 dark:text-slate-400 hover:text-[#25D366] transition-colors text-sm font-semibold" href="https://wa.me/qr/5V24KV2WD3NBA1" target="_blank">
+<svg class="size-5 fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"></path>
+</svg>
+                                واتساب: 5V24KV2WD3NBA1
+                            </a>
+<div class="flex gap-4">
+<a class="size-10 rounded-full bg-slate-100 dark:bg-slate-800 flex items-center justify-center text-slate-600 dark:text-slate-400 hover:bg-primary hover:text-white transition-all" href="#">
+<span class="material-symbols-outlined">public</span>
+</a>
+<a class="size-10 rounded-full bg-slate-100 dark:bg-slate-800 flex items-center justify-center text-slate-600 dark:text-slate-400 hover:bg-primary hover:text-white transition-all" href="#">
+<span class="material-symbols-outlined">share</span>
+</a>
+<a class="size-10 rounded-full bg-slate-100 dark:bg-slate-800 flex items-center justify-center text-slate-600 dark:text-slate-400 hover:bg-primary hover:text-white transition-all" href="#">
+<span class="material-symbols-outlined">alternate_email</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+<div class="pt-8 border-t border-slate-100 dark:border-slate-900 text-center text-slate-400 text-xs">
+                    جميع الحقوق محفوظة © 2024 السودان كارز (SudanCars)
+                </div>
+</footer>
+</div>
+</div>
+
+</body></html>

@@ -1,0 +1,172 @@
+<html dir="rtl" lang="ar"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#13ec5b",
+                        "background-light": "#f6f8f6",
+                        "background-dark": "#102216",
+                        "neutral-light": "#e7f3eb",
+                        "text-main": "#0d1b12",
+                        "text-muted": "#4c9a66",
+                    },
+                    fontFamily: {
+                        "display": ["Inter", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-text-main">
+<div class="relative flex h-auto min-h-screen w-full flex-col overflow-x-hidden">
+<div class="layout-container flex h-full grow flex-col">
+<header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-neutral-light bg-white px-10 py-3 dark:bg-background-dark dark:border-white/10">
+<div class="flex items-center gap-8">
+<div class="flex items-center gap-4 text-text-main dark:text-white">
+<div class="size-6 text-primary">
+<span class="material-symbols-outlined text-3xl">directions_car</span>
+</div>
+<h2 class="text-xl font-bold leading-tight tracking-[-0.015em]">SudanCars</h2>
+</div>
+<label class="flex flex-col min-w-40 h-10 max-w-64 hidden md:flex">
+<div class="flex w-full flex-1 items-stretch rounded-lg h-full overflow-hidden">
+<div class="text-text-muted flex border-none bg-neutral-light items-center justify-center px-3">
+<span class="material-symbols-outlined">search</span>
+</div>
+<input class="form-input flex w-full min-w-0 flex-1 border-none bg-neutral-light focus:ring-0 h-full placeholder:text-text-muted text-base font-normal" placeholder="بحث عن سيارة..."/>
+</div>
+</label>
+</div>
+<div class="flex flex-1 justify-end gap-8 items-center">
+<nav class="hidden lg:flex items-center gap-9">
+<a class="text-text-main dark:text-white text-sm font-medium hover:text-primary transition-colors" href="#">الرئيسية</a>
+<a class="text-text-main dark:text-white text-sm font-medium hover:text-primary transition-colors" href="#">سوق السيارات</a>
+<a class="text-text-main dark:text-white text-sm font-medium hover:text-primary transition-colors" href="#">خدماتنا</a>
+<a class="text-text-main dark:text-white text-sm font-medium hover:text-primary transition-colors" href="#">اتصل بنا</a>
+</nav>
+<div class="flex items-center gap-4">
+<button class="flex min-w-[100px] cursor-pointer items-center justify-center rounded-lg h-10 px-4 bg-primary text-text-main text-sm font-bold shadow-sm hover:opacity-90 transition-opacity">
+<span>حسابي</span>
+</button>
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10 border-2 border-primary/20" data-alt="User profile picture placeholder" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCWJ-49mHyZVoBBWF4jLLGWF7xFgZT87GfcaR_rJ5Kx_PTn-gBwFTD4m3rKCyVBl-opEiVFjx8NI0uLu5CxAu4vK9Xr4hqX6qNxA6zLZ7FZnRJ8jKipHT2PEJuDIeOwbuzZ1x9JF84v_yazRXDvEX688VOMrMVcTEV5WEn3EjF9mKrWROy0dV2BzzJ1X_TpCzPsjwry3lX8ksAIGzQSD1uqb8ZtxhGLw6Rxfqg8nMGHP1IcU-QSnTlwYVCXwl0Vy0lfC-sbKQaTCr4");'></div>
+</div>
+</div>
+</header>
+<main class="flex flex-1 justify-center py-10 px-4">
+<div class="layout-content-container flex flex-col max-w-[800px] flex-1">
+<div class="flex flex-wrap gap-2 mb-6">
+<a class="text-text-muted text-sm font-medium hover:underline" href="#">الرئيسية</a>
+<span class="text-text-muted text-sm font-medium">/</span>
+<a class="text-text-muted text-sm font-medium hover:underline" href="#">إعلاناتي</a>
+<span class="text-text-muted text-sm font-medium">/</span>
+<span class="text-text-main dark:text-white text-sm font-bold">تأكيد الدفع</span>
+</div>
+<div class="bg-white dark:bg-white/5 rounded-xl border border-neutral-light dark:border-white/10 shadow-sm overflow-hidden p-8">
+<div class="flex flex-col gap-2 mb-8 text-center sm:text-right">
+<div class="flex items-center gap-3 justify-center sm:justify-start mb-2">
+<span class="material-symbols-outlined text-primary text-4xl">verified_user</span>
+<h1 class="text-text-main dark:text-white text-3xl font-black tracking-tight">تأكيد تفاصيل التحويل</h1>
+</div>
+<p class="text-text-muted text-lg">يرجى إدخال بيانات عملية الدفع لتوثيق إعلانك وضمان ظهوره للمشترين.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-8">
+<div class="md:col-span-12 space-y-6">
+<div class="flex flex-col gap-2">
+<label class="text-text-main dark:text-white text-base font-bold flex items-center gap-2">
+<span class="material-symbols-outlined text-primary">pin</span>
+                                        رقم العملية (Transaction ID)
+                                    </label>
+<input class="form-input flex w-full rounded-lg text-text-main focus:ring-primary focus:border-primary border border-neutral-light dark:border-white/20 bg-background-light/50 dark:bg-white/5 h-14 placeholder:text-text-muted/60 p-4 text-lg font-medium tracking-wider" dir="ltr" placeholder="أدخل رقم العملية من تطبيق بنكك أو فوري"/>
+<p class="text-xs text-text-muted">تأكد من كتابة الرقم بشكل صحيح كما يظهر في الإيصال.</p>
+</div>
+<div class="flex flex-col gap-2">
+<label class="text-text-main dark:text-white text-base font-bold flex items-center gap-2">
+<span class="material-symbols-outlined text-primary">receipt_long</span>
+                                        رفع صورة الإيصال
+                                    </label>
+<div class="border-2 border-dashed border-primary/30 rounded-xl bg-primary/5 p-10 flex flex-col items-center justify-center text-center cursor-pointer hover:bg-primary/10 transition-all group">
+<div class="size-16 rounded-full bg-primary/20 flex items-center justify-center mb-4 text-primary group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-4xl">cloud_upload</span>
+</div>
+<p class="text-text-main dark:text-white font-bold text-lg mb-1">اضغط هنا لتحميل الصورة أو اسحبها وأفلتها</p>
+<p class="text-text-muted text-sm">PNG, JPG, JPEG (بحد أقصى 5 ميجابايت)</p>
+</div>
+</div>
+<div class="bg-primary/10 border border-primary/20 rounded-lg p-4 flex items-start gap-4">
+<span class="material-symbols-outlined text-primary mt-1">info</span>
+<div>
+<p class="text-text-main dark:text-white font-medium text-sm">سيتم مراجعة طلبك وتفعيل الإعلان خلال أقل من ساعة واحدة فقط من إرسال الطلب.</p>
+</div>
+</div>
+<div class="pt-6 flex flex-col sm:flex-row gap-4">
+<button class="flex-1 cursor-pointer items-center justify-center rounded-lg h-14 px-6 bg-primary text-text-main text-lg font-black shadow-lg hover:shadow-primary/20 active:scale-[0.98] transition-all flex gap-3">
+<span>تأكيد وإرسال للتدقيق</span>
+<span class="material-symbols-outlined">send</span>
+</button>
+<button class="sm:w-32 cursor-pointer items-center justify-center rounded-lg h-14 px-6 border border-neutral-light dark:border-white/10 text-text-muted text-lg font-bold hover:bg-red-50 hover:text-red-500 transition-colors">
+                                        إلغاء
+                                    </button>
+</div>
+</div>
+</div>
+</div>
+<div class="mt-12 grid grid-cols-1 md:grid-cols-3 gap-6">
+<div class="flex items-center gap-4 p-4">
+<div class="size-12 rounded-full bg-primary/20 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined">shield</span>
+</div>
+<div>
+<h4 class="font-bold text-text-main dark:text-white text-sm">دفع آمن</h4>
+<p class="text-text-muted text-xs">تشفير كامل لبياناتك</p>
+</div>
+</div>
+<div class="flex items-center gap-4 p-4">
+<div class="size-12 rounded-full bg-primary/20 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined">bolt</span>
+</div>
+<div>
+<h4 class="font-bold text-text-main dark:text-white text-sm">تفعيل سريع</h4>
+<p class="text-text-muted text-xs">خلال 60 دقيقة عمل</p>
+</div>
+</div>
+<div class="flex items-center gap-4 p-4">
+<div class="size-12 rounded-full bg-primary/20 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined">support_agent</span>
+</div>
+<div>
+<h4 class="font-bold text-text-main dark:text-white text-sm">دعم فني</h4>
+<p class="text-text-muted text-xs">متواجدون لخدمتكم 24/7</p>
+</div>
+</div>
+</div>
+</div>
+</main>
+<footer class="mt-auto py-8 border-t border-neutral-light dark:border-white/10 text-center text-text-muted text-sm">
+<p>© 2024 SudanCars - جميع الحقوق محفوظة لمنصة سودان كارز لبيع وشراء السيارات</p>
+</footer>
+</div>
+</div>
+</body></html>
